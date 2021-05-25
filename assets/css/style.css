@@ -158,6 +158,18 @@ header {
     max-width: 920px;
     margin: 0 auto;
 }
+.article_title .tutorial {
+    --category: var(--green);
+}
+.article_title .game {
+    --category: var(--red);
+}
+.article_title .experiment {
+    --category: var(--blue);
+}
+.article_title .other {
+    --category: var(--primary-700);
+}
 .header_contents h1 {
     color: var(--neutral-0);
     display: block;
@@ -166,12 +178,12 @@ header {
     width: auto;
     width: fit-content;
     margin: 0;
-    background-color: var(--green);
+    background-color: var(--category);
 }
 .header_contents h6 {
     padding: 0.5rem 1rem 0rem 1rem; 
     border-radius: 0.5rem 0.5rem 0 0;
-    background-color: var(--green);
+    background-color: var(--category);
     color: var(--neutral-0);
     display: flex;
     width: fit-content;
