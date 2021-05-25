@@ -42,5 +42,14 @@ fields:
     maxSize: 64
   label: Cover picture
   description: The cover picture used on the entry's header and as a thumbnail
+- name: layout
+  type: text
+  config:
+    required: false
+  showOnly:
+    value: Game
+  hidden: true
+  label: Layout
+  default: entry
 pages:
 - _posts/2021-05-25-hello-world.md
