@@ -53,4 +53,4 @@ fields:
   default: entry
 pages:
 - _posts/2021-05-25-hello-world.md
-- _posts/testing.md
+- _posts/2021-05-25-testing.md
