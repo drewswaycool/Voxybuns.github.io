@@ -48,7 +48,7 @@ main {
 }
 main>.article_body {
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
     max-width: 920px;
 }
 
@@ -107,9 +107,9 @@ figcaption {
     height: 1.2em;
 }
 .share_widget {
-    position: relative;
-    bottom: -1rem;
-    float: right;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
 .share_title {
     display: flex;
@@ -185,7 +185,7 @@ figcaption {
 }
 
 header {
-    height: 15rem;
+    height: 12rem;
     background-size: 25%;
     display: flex;
     align-items: flex-end;
@@ -195,6 +195,7 @@ header {
     margin: 0 auto;
     flex: 1 0 100%;
     max-width: 1024px;
+    padding-bottom: 1rem;
 }
 .article_title {
     max-width: 920px;
@@ -374,5 +375,16 @@ header {
     }
     .slider-radio input[type=radio] + label > span {
         display: inline;
+    }
+    .share_widget {
+        position: relative;
+        bottom: -1rem;
+        float: right;
+    }
+    .header_contents {
+        padding-bottom: 0;
+    }
+    main>.article_body {
+        margin-top: 3rem;
     }
 }
