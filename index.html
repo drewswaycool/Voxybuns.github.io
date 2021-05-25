@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+<link rel="stylesheet" href="assets/css/slider-radio.css"> <!-- Filter widget -->
+<link href="assets/css/style.css" rel="stylesheet"> <!-- Custom stylesheet -->
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <h1>hello world!</h1>
+<section class="filter">
+    <div class="slider-radio">
+        <input type="radio" name="grade" id="all" checked="true" onclick="filterObjects('all')"><label for="all"><svg class="icon"><use href="assets/img/icons.svg#icon-all"></use></svg><span>All</span></label>
+        <input type="radio" name="grade" id="games" onclick="filterObjects('game')"><label for="games"><svg class="icon"><use href="assets/img/icons.svg#icon-game"></use></svg><span>Games</span></label>
+        <input type="radio" name="grade" id="tutorials" onclick="filterObjects('tutorial')"><label for="tutorials"><svg class="icon"><use href="assets/img/icons.svg#icon-tutorial"></use></svg><span>Tutorials</span></label>
+        <input type="radio" name="grade" id="experiments" onclick="filterObjects('experiment')"><label for="experiments"><svg class="icon"><use href="assets/img/icons.svg#icon-experiment"></use></svg><span>Experiments</span></label>
+    </div>
+</section>
+<section class="card_list">
+    
+        <a href="/2021/05/24/third-person-camera.html" class="card tutorial">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="/2021/05/24/third-person-camera.html/cover.png" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="assets/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
+                    <h4>Making a third-person camera!</h4>
+                    <p>Learn to create a camera for third-person games, that can freely orbit around the player!</p>
+                </div>
+            </article>
+        </a>
+    
+        <a href="/2021/05/11/discovering-gbg.html" class="card tutorial">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="/2021/05/11/discovering-gbg.html/cover.png" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="assets/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
+                    <h4>Shit the game is out!</h4>
+                    <p>I couldn't wait oh my god!</p>
+                </div>
+            </article>
+        </a>
+    
+</section>
+    </main>
+    <script src="assets/js/filter.js"></script>
+</body>
+</html>
