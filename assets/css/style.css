@@ -84,6 +84,7 @@ a:any-link {
 }
 a:hover {
     color: var(--neutral-900);
+    text-decoration: underline;
 }
 p {
     line-height: 1.4;
@@ -133,7 +134,7 @@ figcaption {
     display: flex;
     gap: 2rem;
 }
-.navbar a:not(.nav_active) {
+.navbar a:not(.nav_active):not(:hover) {
     text-decoration: none;
 }
 
