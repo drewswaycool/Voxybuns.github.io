@@ -43,4 +43,4 @@ fields:
   label: Cover picture
   description: The cover picture used on the entry's header and as a thumbnail
 pages:
-- _posts/hello-world.md
+- _posts/2021-05-25-hello-world.md
