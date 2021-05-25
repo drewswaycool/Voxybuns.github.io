@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
-<link rel="stylesheet" href="assets/css/slider-radio.css"> <!-- Filter widget -->
-<link href="assets/css/style.css" rel="stylesheet"> <!-- Custom stylesheet -->
+<link rel="stylesheet" href="/assets/css/slider-radio.css"> <!-- Filter widget -->
+<link href="/assets/css/style.css" rel="stylesheet"> <!-- Custom stylesheet -->
     <title>Home</title>
     <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Home</title>
@@ -16,11 +16,18 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"url":"/","@type":"WebSite","headline":"Home","@context":"https://schema.org"}</script>
+{"headline":"Home","@type":"WebSite","url":"/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 <body>
+    <nav class="navbar">
+    <img src="assets/GBG_Logo.svg" alt="Logo" class="logo">
+    <ul>
+        <li><a href="/" class="nav_active">Posts</a></li>
+        <li><a href="/about.html" >About</a></li>
+    </ul>
+</nav>
     <main>
         <h1>hello world!</h1>
 <section class="filter">
@@ -33,15 +40,70 @@
 </section>
 <section class="card_list">
     
-        <a href="/game/2021/05/25/hello-world.html" class="card tutorial">
+        <a href="/game/2021/05/25/testing.html" class="card game">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="
+                        
+                        /assets/img/icons.svg#icon-game
+                        
+                    "></use></svg> Game</h6>
+                    <h4>Testing</h4>
+                    <p>Blah</p>
+                </div>
+            </article>
+        </a>
+    
+        <a href="/tutorial/2021/05/25/hello-world.html" class="card tutorial">
             <article>
                 <div class="card_image" style="background-color: var(--green);">
                     <img src="/uploads/pattern_color.png" alt="">
                 </div>
                 <div class="card_contents">
-                    <h6><svg class="icon"><use href="assets/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
+                    <h6><svg class="icon"><use href="
+                        
+                        /assets/img/icons.svg#icon-tutorial
+                        
+                    "></use></svg> Tutorial</h6>
                     <h4>Hello world!</h4>
                     <p>This is my awesome article!</p>
+                </div>
+            </article>
+        </a>
+    
+        <a href="/experiment/2021/05/25/experiment.html" class="card experiment">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="
+                        
+                        /assets/img/icons.svg#icon-experiment
+                        
+                    "></use></svg> Experiment</h6>
+                    <h4>Experiment</h4>
+                    <p>Whatever</p>
+                </div>
+            </article>
+        </a>
+    
+        <a href="/other/2021/05/25/and-a-regular-post.html" class="card other">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="
+                        
+                        /assets/img/icons.svg#icon-post
+                        
+                    "></use></svg> Other</h6>
+                    <h4>And a regular post</h4>
+                    <p>I don't know what to say!</p>
                 </div>
             </article>
         </a>
@@ -49,5 +111,6 @@
 </section>
     </main>
     <script src="assets/js/filter.js"></script>
+    <script src="assets/js/slider-radio.js"></script>
 </body>
 </html>
