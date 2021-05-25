@@ -158,16 +158,16 @@ header {
     max-width: 920px;
     margin: 0 auto;
 }
-.article_title .tutorial {
+.article_title.tutorial {
     --category: var(--green);
 }
-.article_title .game {
+.article_title.game {
     --category: var(--red);
 }
-.article_title .experiment {
+.article_title.experiment {
     --category: var(--blue);
 }
-.article_title .other {
+.article_title.other {
     --category: var(--primary-700);
 }
 .header_contents h1 {
