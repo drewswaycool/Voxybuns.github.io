@@ -140,7 +140,7 @@ figcaption {
     border: none;
     color: var(--neutral-900);
     background: var(--primary-400);
-    font-size: inherit;
+    font-size: 1rem;
     padding: 0.5rem;
     line-height: 1;
     border-radius: 100%;
@@ -380,6 +380,9 @@ header {
         position: relative;
         bottom: -1rem;
         float: right;
+    }
+    .share_links > a, .share_links > button, .share_button {
+        font-size: inherit;
     }
     .header_contents {
         padding-bottom: 0;
