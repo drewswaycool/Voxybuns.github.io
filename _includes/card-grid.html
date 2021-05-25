@@ -1,0 +1,16 @@
+<section class="card_list">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}" class="card tutorial">
+            <article>
+                <div class="card_image" style="background-color: var(--green);">
+                    <img src="{{ post.url }}/cover.png" alt="">
+                </div>
+                <div class="card_contents">
+                    <h6><svg class="icon"><use href="assets/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
+                    <h4>{{ post.title }}</h4>
+                    <p>{{ post.summary }}</p>
+                </div>
+            </article>
+        </a>
+    {% endfor %}
+</section>
