@@ -1,4 +1,44 @@
 ---
 label: Blog entry
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Title
+  description: The article's title
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
+  description: Short description that will appear on the entry's card
+- name: category
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Game
+    - Tutorial
+    - Experiment
+    - Other
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: The entry's category
+- name: cover-picture
+  type: file
+  config:
+    maxSize: 64
+  label: Cover picture
+  description: The cover picture used on the entry's header and as a thumbnail
