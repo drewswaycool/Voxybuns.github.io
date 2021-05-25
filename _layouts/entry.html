@@ -9,7 +9,7 @@
 </head>
 <body>
     {% include navbar.html %}
-    <header>
+    <header style="background: url({{ page.cover-picture }}) center/cover;">
         <div class="header_contents">
             <div class="article_title {{ page.category | downcase }}">
                 <h6><svg class="icon"><use href="
@@ -25,7 +25,22 @@
                     "></use></svg> {{ page.category }}</h6>
                 <h1>{{ page.title }}</h1>
             </div>
-            <button class="share_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-share' | absolute_url }}"></use></svg></button>
+            <div class="share_widget">
+                <div class="share_dialog">
+                    <div class="share_title">
+                        <h5>Share this article</h5>
+                        <button class="close_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-close' | absolute_url }}"></use></svg></button>
+                    </div>
+                    <div class="share_links">
+                        <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-facebook' | absolute_url }}"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-twitter' | absolute_url }}"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-reddit' | absolute_url }}"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-link' | absolute_url }}"></use></svg></a>
+                    </div>
+                </div>
+                <button class="share_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-share' | absolute_url }}"></use></svg></button>
+            </div>
+            
         </div>
     </header>
     <main>
@@ -33,5 +48,19 @@
             {{ content }}
         </section>
     </main>
+    <script>
+        const shareButton = document.querySelector('.share_button');
+        const shareDialog = document.querySelector('.share_dialog');
+        const closeButton = document.querySelector('.close_button');
+
+        shareButton.addEventListener('click', event => {
+        shareDialog.classList.add('is_open');
+        });
+
+        closeButton.addEventListener('click', event => {
+        shareDialog.classList.remove('is_open');
+        });
+
+    </script>
 </body>
 </html>

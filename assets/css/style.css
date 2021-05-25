@@ -106,7 +106,35 @@ figcaption {
     width: 1.2em;
     height: 1.2em;
 }
-.share_button {
+.share_widget {
+    position: relative;
+    bottom: -1rem;
+    float: right;
+}
+.share_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.share_title > button {
+    cursor: pointer;
+    display: flex;
+    border: none;
+    color: var(--neutral-900);
+    background: none;
+    font-size: inherit;
+    padding: 0;
+    line-height: 1;
+}
+.share_title > h5 {
+    margin: 0;
+}
+.share_links {
+    display: flex;
+    justify-content: space-between;
+}
+.share_links > a, .share_links > button, .share_button {
     cursor: pointer;
     display: flex;
     border: none;
@@ -116,11 +144,25 @@ figcaption {
     padding: 0.5rem;
     line-height: 1;
     border-radius: 100%;
-    box-shadow: 0 0.25rem 0 var(--primary-600);
-    position: relative;
-    bottom: -1rem;
-    float: right;
 }
+.share_button {
+    box-shadow: 0 0.25rem 0 var(--primary-600);
+}
+.share_dialog {
+    display: none;
+    flex-direction: column;
+    background: var(--neutral-0);
+    padding: 1rem;
+    width: 14rem;
+    position: absolute;
+    top: 3rem;
+    right: 50%;
+    border-radius: 1rem 0.25rem 1rem 1rem;
+}
+.share_dialog.is_open {
+    display: flex;
+}
+
 
 .navbar {
     background: var(--neutral-0);
@@ -144,7 +186,7 @@ figcaption {
 
 header {
     height: 15rem;
-    background: url("../img/pattern_green.png"), var(--neutral-0);
+    background: var(--neutral-0);
     background-size: 25%;
     display: flex;
     align-items: flex-end;
@@ -194,7 +236,6 @@ header {
 .article_title svg {
     margin-right: 0.25rem;
 }
-
 .article_body img {
     border-radius: 1rem;
     box-shadow: 0 0.5rem 0 var(--primary-600);

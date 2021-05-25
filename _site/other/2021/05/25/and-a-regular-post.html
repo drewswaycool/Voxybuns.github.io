@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="And a regular post" />
 <script type="application/ld+json">
-{"headline":"And a regular post","dateModified":"2021-05-25T00:00:00+02:00","datePublished":"2021-05-25T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/other/2021/05/25/and-a-regular-post.html"},"description":"Hey","url":"/other/2021/05/25/and-a-regular-post.html","@context":"https://schema.org"}</script>
+{"url":"/other/2021/05/25/and-a-regular-post.html","mainEntityOfPage":{"@type":"WebPage","@id":"/other/2021/05/25/and-a-regular-post.html"},"@type":"BlogPosting","description":"Hey","headline":"And a regular post","dateModified":"2021-05-25T00:00:00+02:00","datePublished":"2021-05-25T00:00:00+02:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -32,7 +32,7 @@
         <li><a href="/about.html" >About</a></li>
     </ul>
 </nav>
-    <header>
+    <header style="background: url() center/cover;">
         <div class="header_contents">
             <div class="article_title other">
                 <h6><svg class="icon"><use href="
@@ -42,7 +42,22 @@
                     "></use></svg> Other</h6>
                 <h1>And a regular post</h1>
             </div>
-            <button class="share_button"><svg class="icon"><use href="/assets/img/icons.svg#icon-share"></use></svg></button>
+            <div class="share_widget">
+                <div class="share_dialog">
+                    <div class="share_title">
+                        <h5>Share this article</h5>
+                        <button class="close_button"><svg class="icon"><use href="/assets/img/icons.svg#icon-close"></use></svg></button>
+                    </div>
+                    <div class="share_links">
+                        <a href="#"><svg class="icon"><use href="/assets/img/icons.svg#icon-facebook"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="/assets/img/icons.svg#icon-twitter"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="/assets/img/icons.svg#icon-reddit"></use></svg></a>
+                        <a href="#"><svg class="icon"><use href="/assets/img/icons.svg#icon-link"></use></svg></a>
+                    </div>
+                </div>
+                <button class="share_button"><svg class="icon"><use href="/assets/img/icons.svg#icon-share"></use></svg></button>
+            </div>
+            
         </div>
     </header>
     <main>
@@ -53,5 +68,19 @@
 
         </section>
     </main>
+    <script>
+        const shareButton = document.querySelector('.share_button');
+        const shareDialog = document.querySelector('.share_dialog');
+        const closeButton = document.querySelector('.close_button');
+
+        shareButton.addEventListener('click', event => {
+        shareDialog.classList.add('is_open');
+        });
+
+        closeButton.addEventListener('click', event => {
+        shareDialog.classList.remove('is_open');
+        });
+
+    </script>
 </body>
 </html>

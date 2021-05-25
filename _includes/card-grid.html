@@ -2,8 +2,7 @@
     {% for post in site.posts %}
         <a href="{{ post.url }}" class="card {{ post.category | downcase }}">
             <article>
-                <div class="card_image" style="background-color: var(--green);">
-                    <img src="{{ post.cover-picture }}" alt="">
+                <div class="card_image" style="background: url({{ post.cover-picture }}) center/cover, var(--primary-600);">
                 </div>
                 <div class="card_contents">
                     <h6><svg class="icon"><use href="
