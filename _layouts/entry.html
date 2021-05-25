@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+    {% seo %}
+</head>
+<body>
+    <header>
+        <div class="header_contents">
+            <div class="article_title">
+                <h6><svg class="icon"><use href="assets/img/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
+                <h1>{{ post.title }}</h1>
+            </div>
+            <button class="share_button"><svg class="icon"><use href="assets/img/icons.svg#icon-share"></use></svg></button>
+        </div>
+    </header>
+    <main>
+        <section class="article_body">
+            {{ content }}
+        </section>
+    </main>
+</body>
+</html>
