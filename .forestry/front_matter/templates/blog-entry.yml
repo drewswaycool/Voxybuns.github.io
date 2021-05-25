@@ -42,3 +42,5 @@ fields:
     maxSize: 64
   label: Cover picture
   description: The cover picture used on the entry's header and as a thumbnail
+pages:
+- _posts/hello-world.md
