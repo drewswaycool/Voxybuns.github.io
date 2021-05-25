@@ -219,6 +219,7 @@ header {
     border-radius: 0 0.5rem 0.5rem 0.5rem;
     width: auto;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 0;
     background-color: var(--category);
 }
@@ -229,6 +230,7 @@ header {
     color: var(--neutral-0);
     display: flex;
     width: fit-content;
+    width: -moz-fit-content;
     align-items: center;
     margin: 0;
 }

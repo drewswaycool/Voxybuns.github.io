@@ -33,7 +33,7 @@
                     </div>
                     <div class="share_links">
                         <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-facebook' | absolute_url }}"></use></svg></a>
-                        <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-twitter' | absolute_url }}"></use></svg></a>
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20%7C%20Game%20Builder%20Playground&url={{ page.url | absolute_url | uri_escape }}"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-twitter' | absolute_url }}"></use></svg></a>
                         <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-reddit' | absolute_url }}"></use></svg></a>
                         <a href="#"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-link' | absolute_url }}"></use></svg></a>
                     </div>
@@ -52,9 +52,22 @@
         const shareButton = document.querySelector('.share_button');
         const shareDialog = document.querySelector('.share_dialog');
         const closeButton = document.querySelector('.close_button');
+        const title = document.title;
+        const url = document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href;
 
+        
         shareButton.addEventListener('click', event => {
-        shareDialog.classList.add('is_open');
+            if (navigator.share) {
+                navigator.share({
+                title: title,
+                url: url
+                }).then(() => {
+                console.log('Thanks for sharing!');
+                })
+                .catch(console.error);
+            } else {
+                shareDialog.classList.add('is_open');
+            }
         });
 
         closeButton.addEventListener('click', event => {
