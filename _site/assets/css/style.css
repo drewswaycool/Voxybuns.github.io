@@ -186,7 +186,6 @@ figcaption {
 
 header {
     height: 15rem;
-    background: var(--neutral-0);
     background-size: 25%;
     display: flex;
     align-items: flex-end;
