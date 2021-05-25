@@ -11,10 +11,10 @@
     <header>
         <div class="header_contents">
             <div class="article_title">
-                <h6><svg class="icon"><use href="assets/img/icons.svg#icon-tutorial"></use></svg> Tutorial</h6>
-                <h1>{{ post.title }}</h1>
+                <h6><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-tutorial' | absolute_url }}"></use></svg> Tutorial</h6>
+                <h1>{{ page.title }}</h1>
             </div>
-            <button class="share_button"><svg class="icon"><use href="assets/img/icons.svg#icon-share"></use></svg></button>
+            <button class="share_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-share' | absolute_url }}"></use></svg></button>
         </div>
     </header>
     <main>
