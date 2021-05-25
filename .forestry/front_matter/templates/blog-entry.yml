@@ -52,7 +52,7 @@ fields:
   label: Layout
   default: entry
 pages:
+- _posts/2021-05-25-and-a-regular-post.md
+- _posts/2021-05-25-experiment.md
 - _posts/2021-05-25-hello-world.md
 - _posts/2021-05-25-testing.md
-- _posts/and-a-regular-post.md
-- _posts/experiment.md
