@@ -6,7 +6,17 @@
                     <img src="{{ post.cover-picture }}" alt="">
                 </div>
                 <div class="card_contents">
-                    <h6><svg class="icon"><use href="{{'assets/img/icons.svg#icon-{{ post.category | downcase }}' | absolute_url }}"></use></svg> {{ post.category }}</h6>
+                    <h6><svg class="icon"><use href="
+                        {% if post.category == "Tutorial" %}
+                        {{'assets/img/icons.svg#icon-tutorial' | absolute_url }}
+                        {% elsif post.category == "Experiment" %}
+                        {{'assets/img/icons.svg#icon-experiment' | absolute_url }}
+                        {% elsif post.category == "Game" %}
+                        {{'assets/img/icons.svg#icon-game' | absolute_url }}
+                        {% else %}
+                        {{'assets/img/icons.svg#icon-other' | absolute_url }}
+                        {% endif %}
+                    "></use></svg> {{ post.category }}</h6>
                     <h4>{{ post.title }}</h4>
                     <p>{{ post.summary }}</p>
                 </div>
