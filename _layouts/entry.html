@@ -46,8 +46,11 @@
         <section class="article_body">
             {{ content }}
         </section>
-        <section class="comments">
-            {% if page.comments %}
+    </main>
+    {% if page.comments %}
+    <section class="comments_wrapper">
+        <div class="comments">
+            <h1>Comments</h1>
             <div id="disqus_thread"></div>
                 <script>
                     /**
@@ -67,9 +70,10 @@
                     })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            {% endif %}
-        </section>
-    </main>
+            </div> 
+        </div>
+    </section>
+    {% endif %}
     {% include footer.html %}
     <script>
         const shareButton = document.querySelector('.share_button');
