@@ -168,10 +168,6 @@ a[data-tooltip]:before, button[data-tooltip]:before {
     border-radius: 0.5rem;
     background:var(--neutral-800);
 }
-a[data-tooltip]:hover:before, button[data-tooltip]:hover:before {
-    opacity: 1;
-    pointer-events: default;
-}
 
 .share_links > a:hover, .share_links > button:hover, .share_button:hover {
     background: #FFF966;
@@ -205,10 +201,11 @@ a[data-tooltip]:hover:before, button[data-tooltip]:hover:before {
     align-items: center;
     padding: 1rem 2rem;
 }
-
 .navbar ul {
     display: flex;
-    gap: 2rem;
+}
+.navbar li:not(:last-child) {
+    margin-right: 2rem;
 }
 .navbar a:not(.nav_active):not(:hover) {
     text-decoration: none;
@@ -392,6 +389,20 @@ header {
     color: var(--green);
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--neutral-800);
+    color: var(--neutral-0);
+    padding: 2rem;
+}
+footer a:any-link, footer a:hover {
+    color: var(--neutral-0);
+}
 
 @media (min-width: 1024px) {
     html {
@@ -409,6 +420,10 @@ header {
     }
     .slider-radio input[type=radio] + label > span {
         display: inline;
+    }
+    a[data-tooltip]:hover:before, button[data-tooltip]:hover:before {
+        opacity: 1;
+        pointer-events: default;
     }
     .share_widget {
         position: relative;
