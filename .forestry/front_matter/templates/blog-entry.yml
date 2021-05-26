@@ -51,6 +51,11 @@ fields:
   hidden: true
   label: Layout
   default: entry
+- name: comments
+  type: boolean
+  label: Comments enabled
+  description: Whether comments should be enabled for this post
+  default: true
 pages:
 - _posts/2021-05-25-and-a-regular-post.md
 - _posts/2021-05-25-experiment.md
