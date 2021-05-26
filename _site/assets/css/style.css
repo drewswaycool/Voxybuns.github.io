@@ -21,11 +21,11 @@
 }
 
 html {
+    height: 100%;
     font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 500;
     background: url("../img/pattern_nodon.png") repeat center top/20%, var(--primary-500);
-
 }
 html::-webkit-scrollbar {
     width: 0.5rem;
@@ -36,6 +36,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 1rem;
     color: var(--neutral-900);
 }
@@ -43,13 +47,18 @@ body {
 main {
     padding: 0 1rem;
     margin: 0 auto;
+    width: 100%;
     max-width: 1200px;
     margin-bottom: 3rem;
+    flex: 1 0 auto;
 }
 main>.article_body {
     margin: 0 auto;
     margin-top: 2rem;
     max-width: 920px;
+}
+section {
+    flex: 1 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -199,7 +208,7 @@ a[data-tooltip]:before, button[data-tooltip]:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 .navbar ul {
     display: flex;
@@ -216,6 +225,7 @@ a[data-tooltip]:before, button[data-tooltip]:before {
 }
 
 header {
+    flex: 0 0 auto;
     height: 12rem;
     background-size: 25%;
     display: flex;
@@ -273,7 +283,6 @@ header {
     border-radius: 1rem;
     box-shadow: 0 0.5rem 0 var(--primary-600);
 }
-
 .comments_wrapper {
     background: var(--neutral-0);
     padding: 2rem 1rem;
@@ -325,9 +334,13 @@ header {
     color: var(--primary-700);
     display: flex;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 .card_contents > h6 > svg {
     margin-right: 0.25rem;
+}
+.card_contents h4 {
+    margin-bottom: 0;
 }
 .card.tutorial h6 {
     content: "Tutorial";
@@ -341,16 +354,21 @@ header {
     content: "Experiment";
     color: var(--blue);
 }
+.card_contents .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
 .card_contents .comment_count {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
     line-height: 1;
     color: var(--primary-700);
-    font-size: 0.75rem;
 }
 .card_contents .comment_count svg {
-    margin-right: 0.25em;
+    margin-right: 0.5em;
 }
 
 .card_show {
@@ -372,10 +390,10 @@ header {
 }
 .slider-radio label { 
     transition: color 0.1s ease, width 0.1s ease;
-    flex-basis: 100%;
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
+    flex: 1 1 0;
     z-index: 100;
     color: var(--neutral-900);
     justify-content: center;
@@ -416,6 +434,7 @@ footer {
     background-color: var(--neutral-800);
     color: var(--neutral-0);
     padding: 2rem;
+    flex-shrink: 0;
 }
 footer a:any-link, footer a:hover {
     color: var(--neutral-0);
@@ -424,6 +443,9 @@ footer a:any-link, footer a:hover {
 @media (min-width: 1024px) {
     html {
         font-size: 20px;
+    }
+    .navbar {
+        padding: 1rem 1rem;
     }
     .slider-radio label {
         flex-direction: row;
