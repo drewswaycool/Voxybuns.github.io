@@ -89,7 +89,7 @@ a:hover {
 p {
     line-height: 1.4;
 }
-p:not(:last-child) {
+p:not(:last-child):not(.card p) {
     margin-bottom: 2rem;
 }
 figure {
@@ -340,6 +340,17 @@ header {
 .card.experiment h6 {
     content: "Experiment";
     color: var(--blue);
+}
+.card_contents .comment_count {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 1;
+    color: var(--primary-700);
+    font-size: 0.75rem;
+}
+.card_contents .comment_count svg {
+    margin-right: 0.25em;
 }
 
 .card_show {

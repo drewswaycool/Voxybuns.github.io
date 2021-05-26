@@ -18,6 +18,10 @@
                     "></use></svg> {{ post.category }}</h6>
                     <h4>{{ post.title }}</h4>
                     <p>{{ post.summary }}</p>
+                    <p class="comment_count">
+                        <svg class="icon"><use href="{{'assets/img/icons.svg#icon-comment' | absolute_url }}"></use></svg>
+                        <span class="disqus-comment-count" data-disqus-identifier="{{post.url}}"></span>
+                    </p>
                 </div>
             </article>
         </a>
