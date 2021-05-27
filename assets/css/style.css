@@ -59,11 +59,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1rem;
-    background: url("../img/pattern_nodon.png") repeat center top/20%, var(--bg-mid);
+    background: url("../img/pattern_nodon.png") repeat center top/320px, var(--bg-mid);
     color: var(--text);
 }
 body.dark_theme {
-    background: url("../img/pattern_nodon_dark.png") repeat center top/20%, var(--bg-mid);
+    background-image: url("../img/pattern_nodon_dark.png");
 }
 
 main {
