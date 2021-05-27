@@ -1,6 +1,8 @@
 <nav class="navbar">
     <a href="/"><img src="{% link /assets/img/logo.svg %}" alt="Logo" class="logo"></a>
     <ul>
+        <li><label><input type="checkbox"></label>
+        </li>
         <li><a href="/" {% if page.url == "/" %}class="nav_active"{% endif %}>Posts</a></li>
         <li><a href="/about.html" {% if page.url == "/about.html" %}class="nav_active"{% endif %}>About</a></li>
     </ul>

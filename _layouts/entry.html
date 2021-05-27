@@ -6,20 +6,20 @@
     {% include head.html %}
     {% seo %}
 </head>
-<body>
+<body class="light_theme">
     {% include navbar.html %}
-    <header style="background: url({{ page.cover-picture }}) center/cover, var(--primary-600);">
+    <header style="background: url({{ page.cover-picture }}) center/cover, var(--bg-btm);">
         <div class="header_contents">
             <div class="article_title {{ page.category | downcase }}">
                 <h6><svg class="icon"><use href="
                     {% if page.category == "Tutorial" %}
-                    {{'assets/img/icons.svg#icon-tutorial' | absolute_url }}
+                    /assets/img/icons.svg#icon-tutorial
                     {% elsif page.category == "Experiment" %}
-                    {{'assets/img/icons.svg#icon-experiment' | absolute_url }}
+                    /assets/img/icons.svg#icon-experiment
                     {% elsif page.category == "Game" %}
-                    {{'assets/img/icons.svg#icon-game' | absolute_url }}
+                    /assets/img/icons.svg#icon-game
                     {% else %}
-                    {{'assets/img/icons.svg#icon-post' | absolute_url }}
+                    /assets/img/icons.svg#icon-post
                     {% endif %}
                     "></use></svg> {{ page.category }}</h6>
                 <h1>{{ page.title }}</h1>
@@ -28,16 +28,16 @@
                 <div class="share_dialog">
                     <div class="share_title">
                         <h5>Share this article</h5>
-                        <button class="close_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-close' | absolute_url }}"></use></svg></button>
+                        <button class="close_button"><svg class="icon"><use href="/assets/img/icons.svg#icon-close"></use></svg></button>
                     </div>
                     <div class="share_links">
-                        <a href="#" data-tooltip="Share on Facebook"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-facebook' | absolute_url }}"></use></svg></a>
-                        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20%7C%20Game%20Builder%20Playground&url={{ page.url | absolute_url | uri_escape }}" data-tooltip="Share on Twitter"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-twitter' | absolute_url }}"></use></svg></a>
-                        <a href="https://reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | uri_escape }}%20%7C%20Game%20Builder%20Playground" data-tooltip="Share on Reddit"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-reddit' | absolute_url }}"></use></svg></a>
-                        <a href="#" data-tooltip="Copy to clipboard"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-link' | absolute_url }}"></use></svg></a>
+                        <a href="#" title="Share on Facebook"><svg class="icon"><use href="/assets/img/icons.svg#icon-facebook"></use></svg></a>
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20%7C%20Game%20Builder%20Playground&url={{ page.url | absolute_url | uri_escape }}" title="Share on Twitter"><svg class="icon"><use href="/assets/img/icons.svg#icon-twitter"></use></svg></a>
+                        <a href="https://reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | uri_escape }}%20%7C%20Game%20Builder%20Playground" title="Share on Reddit"><svg class="icon"><use href="/assets/img/icons.svg#icon-reddit"></use></svg></a>
+                        <a href="#" title="Copy to clipboard"><svg class="icon"><use href="/assets/img/icons.svg#icon-link"></use></svg></a>
                     </div>
                 </div>
-                <button data-tooltip="Share this article" class="share_button"><svg class="icon"><use href="{{ 'assets/img/icons.svg#icon-share' | absolute_url }}"></use></svg></button>
+                <button title="Share this article" class="share_button"><svg class="icon"><use href="/assets/img/icons.svg#icon-share"></use></svg></button>
             </div>
             
         </div>

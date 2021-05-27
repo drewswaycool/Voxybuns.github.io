@@ -7,17 +7,43 @@
     src: url('../fonts/MARKPROHEAVY.woff') format('woff');
 }
 
-:root {
-    --primary-400: #FEF242;
-    --primary-500: #FBD939;
-    --primary-600: #FFB43A;
-    --primary-700: #FF8047;
-    --neutral-0: #FFFFFF;
-    --neutral-800: #28336D;
-    --neutral-900: #161E4B;
+body.light_theme {
+    --bg-btm: #FFB43A;
+    --bg-mid: #FBD939;
+    --bg-high: #FEF242;
+    --bg-top: #FFFFFF;
+    --bg-dark: #121A42;
+
+    --text: #121A42;
+    --text-faded: #6874b1;
+    --text-alt: #ffffff;
+
+    --button: #ffffff;
+    --button-interact: #F6F6F6;
+
     --red: #FF104F;
+    --orange: #FF8047;
     --green: #01A182;
     --blue: #3386FF;
+}
+body.dark_theme {
+    --bg-btm: #04091F;
+    --bg-mid: #0B1131;
+    --bg-high: #121A42;
+    --bg-top: #212A59;
+    --bg-dark: var(--bg-btm);
+
+    --text: #ffffff;
+    --text-faded: #99a1cf;
+    --text-alt: #0B1131;
+
+    --button: #212A59;
+    --button-interact: #121A42;
+
+    --red: #FF7C84;
+    --orange: #FFB43A;
+    --green: #01D098;
+    --blue: #2EB7FF;
 }
 
 html {
@@ -25,14 +51,13 @@ html {
     font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    background: url("../img/pattern_nodon.png") repeat center top/20%, var(--primary-500);
 }
 html::-webkit-scrollbar {
     width: 0.5rem;
-    background-color: var(--neutral-900);
+    background-color: var(--text);
 }
 html::-webkit-scrollbar-thumb {
-    background-color:var(--primary-400);
+    background-color:var(--big-high);
 }
 
 body {
@@ -41,7 +66,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1rem;
-    color: var(--neutral-900);
+    background: url("../img/pattern_nodon.png") repeat center top/20%, var(--bg-mid);
+    color: var(--text);
+}
+body.dark_theme {
+    background: url("../img/pattern_nodon_dark.png") repeat center top/20%, var(--bg-mid);
 }
 
 main {
@@ -89,10 +118,10 @@ h6 {
 }
 
 a:any-link {
-    color: var(--neutral-800);
+    color: var(--text);
 }
 a:hover {
-    color: var(--neutral-900);
+    color: var(--orange);
     text-decoration: underline;
 }
 p {
@@ -130,7 +159,7 @@ figcaption {
     cursor: pointer;
     display: flex;
     border: none;
-    color: var(--neutral-900);
+    color: var(--text);
     background: none;
     font-size: inherit;
     padding: 0;
@@ -149,48 +178,26 @@ figcaption {
     display: flex;
     position: relative;
     border: none;
-    color: var(--neutral-900);
-    background: var(--primary-400);
+    color: var(--text);
+    background: var(--button);
     font-size: 1.5rem;
     padding: 0.5rem;
     line-height: 1;
     border-radius: 100%;
 }
-
-a[data-tooltip]:before, button[data-tooltip]:before {
-    display: block;
-    transition: opacity, 0.1s ease;
-    pointer-events: none;
-    opacity: 0;
-    content: attr(data-tooltip);
-    position: absolute;
-    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 0.75rem;
-    text-align: center;
-    left: 50%;
-    transform:translateX(-50%);
-    top: -2rem;
-    color: var(--neutral-0);
-    width: 9rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background:var(--neutral-800);
-}
-
 .share_links > a:hover, .share_links > button:hover, .share_button:hover {
-    background: #FFF966;
+    background: var(--button);
 }
 .share_links > a:active, .share_links > button:active, .share_button:active, .share_links > a:focus, .share_links > button:focus, .share_button:focus {
-    background: var(--primary-500);
+    background: var(--button-interact);
 }
 .share_button {
-    box-shadow: 0 0.25rem 0 var(--primary-600);
+    box-shadow: 0 0.25rem 0 var(--bg-btm);
 }
 .share_dialog {
     display: none;
     flex-direction: column;
-    background: var(--neutral-0);
+    background: var(--bg-high);
     padding: 1rem;
     width: 14rem;
     position: absolute;
@@ -204,7 +211,7 @@ a[data-tooltip]:before, button[data-tooltip]:before {
 
 
 .navbar {
-    background: var(--neutral-0);
+    background: var(--bg-top);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,6 +225,9 @@ a[data-tooltip]:before, button[data-tooltip]:before {
 }
 .navbar a:not(.nav_active):not(:hover) {
     text-decoration: none;
+}
+.navbar a.nav_active {
+    color: var(--orange);
 }
 
 .logo {
@@ -252,10 +262,10 @@ header {
     --category: var(--blue);
 }
 .article_title.other {
-    --category: var(--primary-700);
+    --category: var(--orange);
 }
 .header_contents h1 {
-    color: var(--neutral-0);
+    color: var(--text-alt);
     display: block;
     padding: 0.5rem 1rem;
     border-radius: 0 0.5rem 0.5rem 0.5rem;
@@ -269,7 +279,7 @@ header {
     padding: 0.5rem 1rem 0rem 1rem; 
     border-radius: 0.5rem 0.5rem 0 0;
     background-color: var(--category);
-    color: var(--neutral-0);
+    color: var(--text-alt);
     display: flex;
     width: fit-content;
     width: -moz-fit-content;
@@ -281,11 +291,12 @@ header {
 }
 .article_body img {
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 0 var(--primary-600);
+    box-shadow: 0 0.5rem 0 var(--bg-btm);
 }
 .comments_wrapper {
-    background: var(--neutral-0);
+    background: var(--bg-dark);
     padding: 2rem 1rem;
+    color: var(--text-alt);
 }
 .comments {
     margin: 0 auto;
@@ -300,26 +311,22 @@ header {
     gap: 1rem;
 }
 .card_list > a:any-link, .card_list > a:hover {
-    color: var(--neutral-800);
+    color: var(--text);
     text-decoration: none;
 }
 .card {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     display: none;
-    background: var(--neutral-0);
+    background: var(--bg-top);
     border-radius: 1.5rem;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 0 0 var(--primary-600);
-}
-.card:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0 0.25rem 0 var(--primary-600);
+    box-shadow: 0 0 0 var(--bg-btm);
 }
 .card_image {
     display: flex;
     justify-content: center;
-    background: var(--primary-600);
+    background: var(--bg-btm);
     width: 100%;
     height: 12rem;
     padding: 1rem;
@@ -331,7 +338,7 @@ header {
     padding: 1.25rem;
 }
 .card_contents > h6 {
-    color: var(--primary-700);
+    color: var(--orange);
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -341,6 +348,7 @@ header {
 }
 .card_contents h4 {
     margin-bottom: 0;
+    color: var(--orange);
 }
 .card.tutorial h6 {
     content: "Tutorial";
@@ -360,12 +368,12 @@ header {
     justify-content: space-between;
     margin-top: 0.5rem;
     font-size: 0.75rem;
+    color: var(--text-faded);
 }
 .card_contents .comment_count {
     display: flex;
     align-items: center;
     line-height: 1;
-    color: var(--primary-700);
 }
 .card_contents .comment_count svg {
     margin-right: 0.5em;
@@ -380,7 +388,7 @@ header {
 }
 
 .slider-radio {
-    background: var(--primary-600);
+    background: var(--bg-btm);
     border-radius: 0.5rem;
     width: 100%;
     max-width: 36rem;
@@ -395,7 +403,7 @@ header {
     flex-direction: column;
     flex: 1 1 0;
     z-index: 100;
-    color: var(--neutral-900);
+    color: var(--text);
     justify-content: center;
     align-items: center;
 }
@@ -412,8 +420,8 @@ header {
 }
 .slider-radio input[type=radio]:checked + label,
 .slider-radio .sliding-piece { 
-    background-color: var(--neutral-0);
-    color: var(--primary-700);
+    background-color: var(--bg-top);
+    color: var(--orange);
     border-radius: 0.5rem;
 }
 .slider-radio input[type=radio][id="games"]:checked + label {
@@ -422,7 +430,6 @@ header {
 .slider-radio input[type=radio][id="experiments"]:checked + label {
     color: var(--blue);
 }
-
 .slider-radio input[type=radio][id="tutorials"]:checked + label {
     color: var(--green);
 }
@@ -431,13 +438,17 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--neutral-800);
-    color: var(--neutral-0);
+    background-color: var(--bg-dark);
+    color: var(--text-alt);
     padding: 2rem;
     flex-shrink: 0;
 }
 footer a:any-link, footer a:hover {
-    color: var(--neutral-0);
+    color: var(--text-alt);
+}
+
+body.dark_theme footer, body.dark_theme footer a:any-link, body.dark_theme .comments_wrapper {
+    color: var(--text);
 }
 
 @media (min-width: 1024px) {
@@ -460,9 +471,9 @@ footer a:any-link, footer a:hover {
     .slider-radio input[type=radio] + label > span {
         display: inline;
     }
-    a[data-tooltip]:hover:before, button[data-tooltip]:hover:before {
-        opacity: 1;
-        pointer-events: default;
+    .card:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 0.25rem 0 var(--bg-btm);
     }
     .share_widget {
         position: relative;

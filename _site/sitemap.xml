@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/other/2021/05/25/and-a-regular-post.html</loc>
+<loc>https://voxybuns.github.io/other/2021/05/25/and-a-regular-post.html</loc>
 <lastmod>2021-05-25T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>/experiment/2021/05/25/experiment.html</loc>
+<loc>https://voxybuns.github.io/experiment/2021/05/25/experiment.html</loc>
 <lastmod>2021-05-25T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>/tutorial/2021/05/25/hello-world.html</loc>
+<loc>https://voxybuns.github.io/tutorial/2021/05/25/hello-world.html</loc>
 <lastmod>2021-05-25T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>/game/2021/05/25/testing.html</loc>
+<loc>https://voxybuns.github.io/game/2021/05/25/testing.html</loc>
 <lastmod>2021-05-25T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>/about.html</loc>
+<loc>https://voxybuns.github.io/about.html</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>https://voxybuns.github.io/</loc>
 </url>
 </urlset>
