@@ -14,3 +14,7 @@ I wanted to have a place where I could be free to talk about said games, but als
 This is my first time making and trying to maintain a blog. I have no schedule, no experience, and absolutely no idea of what I'm doing, but I think I'm gonna have a lot of fun, and I hope you'll tag along for the ride!
 
 — Voxy
+
+## Where to find me
+
+You can follow me on [Twitter](https://twitter.com/voxybuns), or join me and other Game Builder Garage enthusiasts on the [Super Mario Maker 2 + Game Builder Garage](https://discord.gg/WKeyVddP5v) Discord server!
