@@ -27,10 +27,11 @@
 
 </head>
 <body class="light_theme">
+    <script src="/assets/js/theme_check.js"></script>
     <nav class="navbar">
     <a href="/"><img src="/assets/img/logo.svg" alt="Logo" class="logo"></a>
     <ul>
-        <li><label><input type="checkbox"></label>
+        <li><label title="Switch themes"><input type="checkbox" id="theme_switcher"><svg class="icon"><use href="/assets/img/icons.svg#icon-theme"></use></svg></label>
         </li>
         <li><a href="/" >Posts</a></li>
         <li><a href="/about.html" >About</a></li>
@@ -100,6 +101,7 @@
     <footer>
     <p>Created and ran with &hearts; by <a href="https://www.twitter.com/voxybuns">Voxy</a></p>
 </footer>
+    <script src="/assets/js/theme_switcher.js"></script>
     <script>
         const shareButton = document.querySelector('.share_button');
         const shareDialog = document.querySelector('.share_dialog');

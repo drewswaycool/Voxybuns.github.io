@@ -1,7 +1,7 @@
 <nav class="navbar">
     <a href="/"><img src="{% link /assets/img/logo.svg %}" alt="Logo" class="logo"></a>
     <ul>
-        <li><label><input type="checkbox"></label>
+        <li><label title="Switch themes"><input type="checkbox" id="theme_switcher"><svg class="icon"><use href="/assets/img/icons.svg#icon-theme"></use></svg></label>
         </li>
         <li><a href="/" {% if page.url == "/" %}class="nav_active"{% endif %}>Posts</a></li>
         <li><a href="/about.html" {% if page.url == "/about.html" %}class="nav_active"{% endif %}>About</a></li>

@@ -7,6 +7,7 @@
     {% seo %}
 </head>
 <body class="light_theme">
+    <script src="/assets/js/theme_check.js"></script>
     {% include navbar.html %}
     <header style="background: url({{ page.cover-picture }}) center/cover, var(--bg-btm);">
         <div class="header_contents">
@@ -75,6 +76,7 @@
     </section>
     {% endif %}
     {% include footer.html %}
+    <script src="/assets/js/theme_switcher.js"></script>
     <script>
         const shareButton = document.querySelector('.share_button');
         const shareDialog = document.querySelector('.share_dialog');
