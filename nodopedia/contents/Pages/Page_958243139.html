@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Signals and Input/Output Ports | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Signals and Input/Output Ports -->
+<div class="pagetitle" id="PageId_958243139">Signals and Input/Output Ports</div>
+<div class="text_separate">
+<h1 id="Anchor_958243139_h1_1">Input Ports with No Connections</h1>
+<p>An input port with no connection assumes an input of 0.00.<br />However, certain Nodon will assume other values at unconnected ports.</p>
+<h1 id="Anchor_958243139_h1_2">Input Ports with Multiple Connections</h1>
+<p>If a single input port has multiple connections, the signals arriving at the port are added together and treated as a single signal.</p>
+<h1 id="Anchor_958243139_h1_3">Output Ports with Multiple Connections</h1>
+<p>If a single output port has multiple connections, the same signal is sent through each connection.</p>
+<h1 id="Anchor_958243139_h1_4">Signal Range</h1>
+<p>When a signal travels between output and input ports, it can travel through 16 connections per frame.<br />If there are more than 16 connections between Nodon in a chain, then the signal will continue on in the next frame.</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+div.code_block{position:relative;background:#eee;margin:8px 20px 16px 20px;padding:8px 8px}
+div.code_block pre{margin:8px 12px 8px 12px;padding:0}
+pre.code{font-size:9pt;font-family:"Courier New",monospace;margin:0;padding:0;overflow:auto;white-space:pre-wrap;word-wrap:break-word;background-color:#eee;line-height:120%}
+pre.comment{font-size:9pt;color:#888;margin:0;padding:0}
+table.codeblock{border-style:dashed;table-layout:fixed;width:auto}
+table.codeblock td{vertical-align:top!important;border-style:dashed!important;border-color:#ccc!important;font-family:"Courier New",monospace}
+table.codeblock td.gutter{width:50px;min-width:50px;text-align:right;background-color:#eee;color:#aaa;border-style:dashed solid dashed dashed}
+table.codeblock td.code{text-align:left}
+table.codeblock pre{margin:0;padding:0;font-family:inherit;white-space:pre-wrap}
+DIV.codeblock{white-space:pre-wrap;overflow-x:auto;margin:0;padding:0}
+DIV.codeblock br{display:none}
+DIV.codeblock .hll,PRE.code .hll{background-color:#ffc}
+DIV.codeblock .c,PRE.code .c{color:#408090;font-style:italic}
+DIV.codeblock .esc,PRE.code .esc{font-weight:700}
+DIV.codeblock .k,PRE.code .k{color:#007020;font-weight:700}
+DIV.codeblock .o,PRE.code .o{color:#666}
+DIV.codeblock .ch,PRE.code .ch{color:#408090;font-style:italic}
+DIV.codeblock .cm,PRE.code .cm{color:#408090;font-style:italic}
+DIV.codeblock .cp,PRE.code .cp{color:#007020}
+DIV.codeblock .cpf,PRE.code .cpf{color:#007020}
+DIV.codeblock .c1,PRE.code .c1{color:#408090;font-style:italic}
+DIV.codeblock .cs,PRE.code .cs{color:#408090;background-color:#fff0f0}
+DIV.codeblock .gd,PRE.code .gd{color:#a00000}
+DIV.codeblock .ge,PRE.code .ge{font-style:italic}
+DIV.codeblock .gr,PRE.code .gr{color:red}
+DIV.codeblock .gh,PRE.code .gh{color:navy;font-weight:700}
+DIV.codeblock .gi,PRE.code .gi{color:#00a000}
+DIV.codeblock .go,PRE.code .go{color:#303030}
+DIV.codeblock .gp,PRE.code .gp{color:#c65d09;font-weight:700}
+DIV.codeblock .gs,PRE.code .gs{font-weight:700}
+DIV.codeblock .gu,PRE.code .gu{color:purple;font-weight:700}
+DIV.codeblock .gt,PRE.code .gt{color:#0040d0}
+DIV.codeblock .kc,PRE.code .kc{color:#007020;font-weight:700}
+DIV.codeblock .kd,PRE.code .kd{color:#007020;font-weight:700}
+DIV.codeblock .kn,PRE.code .kn{color:#007020;font-weight:700}
+DIV.codeblock .kp,PRE.code .kp{color:#007020}
+DIV.codeblock .kr,PRE.code .kr{color:#007020;font-weight:700}
+DIV.codeblock .kt,PRE.code .kt{color:#902000}
+DIV.codeblock .m,PRE.code .m{color:#208050}
+DIV.codeblock .s,PRE.code .s{color:#4070a0}
+DIV.codeblock .na,PRE.code .na{color:#4070a0}
+DIV.codeblock .nb,PRE.code .nb{color:#007020}
+DIV.codeblock .nc,PRE.code .nc{color:#0e84b5;font-weight:700}
+DIV.codeblock .no,PRE.code .no{color:#60add5}
+DIV.codeblock .nd,PRE.code .nd{color:#555;font-weight:700}
+DIV.codeblock .ni,PRE.code .ni{color:#d55537;font-weight:700}
+DIV.codeblock .ne,PRE.code .ne{color:#007020}
+DIV.codeblock .nf,PRE.code .nf{color:#06287e}
+DIV.codeblock .nl,PRE.code .nl{color:#002070;font-weight:700}
+DIV.codeblock .nn,PRE.code .nn{color:#0e84b5;font-weight:700}
+DIV.codeblock .nt,PRE.code .nt{color:#062873;font-weight:700}
+DIV.codeblock .nv,PRE.code .nv{color:#bb60d5}
+DIV.codeblock .ow,PRE.code .ow{color:#007020;font-weight:700}
+DIV.codeblock .w,PRE.code .w{color:#bbb}
+DIV.codeblock .mb,PRE.code .mb{color:#208050}
+DIV.codeblock .mf,PRE.code .mf{color:#208050}
+DIV.codeblock .mh,PRE.code .mh{color:#208050}
+DIV.codeblock .mi,PRE.code .mi{color:#208050}
+DIV.codeblock .mo,PRE.code .mo{color:#208050}
+DIV.codeblock .sb,PRE.code .sb{color:#4070a0}
+DIV.codeblock .sc,PRE.code .sc{color:#4070a0}
+DIV.codeblock .sd,PRE.code .sd{color:#4070a0;font-style:italic}
+DIV.codeblock .s2,PRE.code .s2{color:#4070a0}
+DIV.codeblock .se,PRE.code .se{color:#4070a0;font-weight:700}
+DIV.codeblock .sh,PRE.code .sh{color:#4070a0}
+DIV.codeblock .si,PRE.code .si{color:#70a0d0;font-style:italic}
+DIV.codeblock .sx,PRE.code .sx{color:#c65d09}
+DIV.codeblock .sr,PRE.code .sr{color:#235388}
+DIV.codeblock .s1,PRE.code .s1{color:#4070a0}
+DIV.codeblock .ss,PRE.code .ss{color:#517918}
+DIV.codeblock .bp,PRE.code .bp{color:#007020}
+DIV.codeblock .vc,PRE.code .vc{color:#bb60d5}
+DIV.codeblock .vg,PRE.code .vg{color:#bb60d5}
+DIV.codeblock .vi,PRE.code .vi{color:#bb60d5}
+DIV.codeblock .il,PRE.code .il{color:#208050}
+/*# sourceMappingURL=codeblock.css.map */

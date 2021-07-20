@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Rotation-Speed Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Rotation-Speed Nodon -->
+<div class="pagetitle" id="PageId_804924763">Rotation-Speed Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="IntegratedRotationSpeedNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysIn">
+      <p>I know how fast you've been spinning your<br />console or your Joy-Con...and the axis and<br />the direction too! I know a lot about spinning!</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_804924763_h1_1">Port</h1>
+<h2 id="Anchor_804924763_h2_1">Input</h2>
+<p>None</p>
+<h2 id="Anchor_804924763_h2_2">Output</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Output value</th>
+    </tr>
+    <tr>
+      <td>Rotation speed</td>
+      <td>
+        <p>Outputs the speed that the Joy-Con or console is rotating at.<br />When the console's rotation is being checked, 2.50 rotations per second will result in an output of 1.00.<br />In the case of the Joy-Con, 5.00 rotations per second will result in an output of 1.00.</p>
+      </td>
+      <td>
+        <p>When Direction is set to ＋/－: Between -1.00 and 1.00<br />When Direction is set to ＋ or －: Between 0.00 and 1.00 </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804924763_h2_3">Connection</h2>
+<p>None</p>
+<h1 id="Anchor_804924763_h1_2">Settings</h1>
+<h2 id="Anchor_804924763_h2_4">Check What?</h2>
+<p>Determines which controller will be checked.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auto</td>
+      <td>
+        <p>Automatically switches the target to be checked, depending on which controller is connected.</p>
+        <p>See also: <a href="../Pages/Page_871338295.html">Automatic Switching between Controllers</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><br />Joy&#8209;Con&nbsp;(L)<br />Joy&#8209;Con&nbsp;(R)</td>
+      <td>Checks the specified target.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804924763_h2_5">Controller Number</h2>
+<p>Select which controller to check.</p>
+<p>This setting is only available when Check What? is set to Joy-Con.</p>
+<h2 id="Anchor_804924763_h2_6">Output and Range</h2>
+<p>Sets how the raw input will be converted before being sent as output.</p>
+<p>See also: <a href="../Pages/Page_797820577.html">Output Conversion Settings</a></p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digital</td>
+      <td>Outputs either 1.00 if the value is within the specified range or 0.00 if it's outside the range. It's judged to be within range if it's equal or less than the upper value of the range and equal or more than the lower value.</td>
+    </tr>
+    <tr>
+      <td>Analog</td>
+      <td>Passes on any input that falls within the specified range, converted to a value between 0.00 and 1.00 (as opposed to either 0.00 or 1.00).</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804924763_h2_7">Axis of Rotation</h2>
+<p>Sets which axis of rotation to check.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X/Y/Z</td>
+      <td>Outputs the speed of the rotation around the specified axis.</td>
+    </tr>
+    <tr>
+      <td>Any direction</td>
+      <td>Outputs the highest speed of rotation around any axis.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804924763_h2_8">Direction</h2>
+<p>Sets which direction of rotation to check.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>＋</td>
+      <td>Reacts only when rotation is in a positive direction.</td>
+    </tr>
+    <tr>
+      <td>－</td>
+      <td>Reacts only when rotation is in a negative direction.</td>
+    </tr>
+    <tr>
+      <td>＋/－</td>
+      <td>Reacts when rotation is in either direction.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

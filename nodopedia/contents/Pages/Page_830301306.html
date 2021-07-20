@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Hand Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Hand Nodon -->
+<div class="pagetitle" id="PageId_830301306">Hand Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="PlzHandNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysMono">
+      <p>Want to grab something?<br />I'll be your helping hand!</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_830301306_h1_1">If you call up this Nodon...</h1>
+<p>This Nodon will place a hand line on the game screen. The line will move according to the tilt of a wirelessly connected Joy-Con controller.</p>
+<h1 id="Anchor_830301306_h1_2">Port</h1>
+<h2 id="Anchor_830301306_h2_1">Input</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Input operation</th>
+    </tr>
+    <tr>
+      <td>Grab</td>
+      <td>If a value other than 0.00 is received at this port, the hand will grab whatever the hand line is currently pointing at.<br />However, objects in connection groups that include a Game-Screen Nodon, a Camera Nodon, or a Camera-Position Nodon cannot be grabbed.<br />If the hand grabs an object in a connection group that includes a Camera-Target Nodon, the camera's target will not change while the object is grabbed.</td>
+      <td>Determines whether a signal is or is not equal to 0.00</td>
+    </tr>
+    <tr>
+      <td>Forward/Backward</td>
+      <td>Moves the grabbed object back or forth, depending on the input.<br />Plus values will move the object forward, minus values back.<br />Measured in meters per second.</td>
+      <td>Restricted to between -1,000.00 and 1,000.00.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_830301306_h2_2">Output</h2>
+<p>None</p>
+<h2 id="Anchor_830301306_h2_3">Connection</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+    </tr>
+    <tr>
+      <td>Upper connection port</td>
+      <td>
+        <p>Connect this port to the lower connection port of another Nodon to physically link objects.</p>
+        <p>Connected objects will be treated as gripped objects, gripped from the start.<br />It's not possible to drop a connected object.<br />You can only connect one object per port.</p>
+        <p>Object Nodon, Fancy-Object Nodon, Text-Object Nodon, Number-Object Nodon, Moving-Object Nodon, Rotating-Object Nodon, Play-Sound Nodon, Effect Nodon, All-Sensor Nodon, Extending-Object Nodon, Destroy-Object Nodon, Teleport-Object-Entrance/Exit Nodon, and Attract-Object Nodon can connect to this connection port only with their lower connection ports.<br />It cannot connect to groups that include a Camera-related Nodon.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="Anchor_830301306_h1_3">Settings</h1>
+<h2 id="Anchor_830301306_h2_4">Controller Number</h2>
+<p>Select which controller to check.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 to 4</td>
+      <td>Checks the controller with the selected number.</td>
+    </tr>
+    <tr>
+      <td>Auto</td>
+      <td>
+        <p>Changes the controller to be automatically checked, depending on connection status.</p>
+        <p>See also: <a href="../Pages/Page_871338295.html">Automatic Switching between Controllers</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_830301306_h2_5">Which Controller?</h2>
+<p>Sets which Joy-Con to check.</p>
+<h2 id="Anchor_830301306_h2_6">Mode</h2>
+<p>Sets the type of grip.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hold</td>
+      <td>Grips the object as long as an input other than 0.00 is received.<br />When 0.00 is received, the object will be dropped.</td>
+    </tr>
+    <tr>
+      <td>Toggle</td>
+      <td>
+        <p>If an input with a value other than 0.00 is received when nothing is gripped, the hand will grip an object. It will continue to grip, even if a value of 0.00 is received.<br />If an input with a value other than 0.00 is received when something is gripped, the hand will release the object.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_830301306_h2_7">Carrying Style</h2>
+<p>Sets the orientation and position for gripped objects.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>
+        <p>Setting value</p>
+      </th>
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Precise</td>
+      <td>The object will keep its position and orientation even after<br />being gripped.</td>
+    </tr>
+    <tr>
+      <td>Snappy</td>
+      <td>
+        <p>Resets the orientation and position, then grips.<br />The orientation will be determined by the object's connection point. The position will be determined by the Snap Distance setting.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_830301306_h2_8">Snap Distance</h2>
+<p>Sets the position of the grabbed object.<br />Can be set between 0.00 and 100.00. Measured in meters.<br />Only takes effect when Carrying Style is set to Snappy or an object is<br />physically connected.</p>
+<h2 id="Anchor_830301306_h2_9">Center of Rotation</h2>
+<p>Sets where changes in the tilt angle of the Joy-Con will be reflected on the<br />in-game hand.<br />You can choose from Wrist, Elbow, or Shoulder.<br />Selecting Wrist will result in smaller movements, while Shoulder makes<br />larger movements.</p>
+<h2 id="Anchor_830301306_h2_10">Launch Speed</h2>
+<p>Sets the amount of force that is applied to gripped objects on release. Objects will be sent flying on release due to this power.<br />You can set between 0.00 and 100.00. Measured in meters per second.</p>
+<h1 id="Anchor_830301306_h1_4">Other</h1>
+<p>The hand's line will be moved with the motion sensor of a wirelessly connected Joy-Con.<br />Point the Joy-Con at the screen and move it up, down, left, and right.</p>
+<p>You can call up to eight Hand Nodon per game.</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Timer Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Timer Nodon -->
+<div class="pagetitle" id="PageId_821845557">Timer Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="TimerNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysMiddle">
+      <p>My only job is to wait until the scheduled time.<br />That is all.</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_821845557_h1_1">Port</h1>
+<h2 id="Anchor_821845557_h2_1">Input</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Input operation</th>
+    </tr>
+    <tr>
+      <td>Input</td>
+      <td>
+        <p>When the value received by this port changes from 0.00 to anything else, the timer starts to count down.<br />Any further input received after the timer has started or while the Nodon is sending an output will have no effect.</p>
+      </td>
+      <td>Determines whether a signal is or is not equal to 0.00</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_821845557_h2_2">Output</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Output value</th>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>
+        <p>Outputs 1.00 when the set number of seconds passes from the start of the countdown.<br />It will continue to output 1.00 for the number of seconds determined by the Continue Output for How Long? setting.</p>
+      </td>
+      <td>0.00 or 1.00</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_821845557_h2_3">Connection</h2>
+<p>None</p>
+<h1 id="Anchor_821845557_h1_2">Settings</h1>
+<h2 id="Anchor_821845557_h2_4">Output after How Many Seconds?</h2>
+<p>Sets the amount of seconds to wait after receiving input before outputting 1.00.<br />If set to 0.00, then output will be sent immediately, without waiting even one frame.<br />Since the time is based on frame processing, the time measurement in seconds might be slightly off.<br />You can set it between 0.00 and 100.00.</p>
+<h2 id="Anchor_821845557_h2_5">Continue Output for How Long?</h2>
+<p>Sets how many seconds to continue to output a value of 1.00 after the countdown<br />completes. Even when set to 0.00, it'll wait a minimum of one frame before<br />sending the output. You can set it between 0.00 and 100.00.</p>
+<h1 id="Anchor_821845557_h1_3">Other</h1>
+<p>Actual waiting times may lengthen slightly depending on how long the whole program takes to complete all its processes.</p>
+<p>
+  <br />
+</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

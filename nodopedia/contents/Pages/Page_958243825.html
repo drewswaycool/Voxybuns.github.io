@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Advanced Cameras | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Advanced Cameras -->
+<div class="pagetitle" id="PageId_958243825">Advanced Cameras</div>
+<div class="text_separate">
+<h1 id="Anchor_958243825_h1_1">Advanced Camera Nodon</h1>
+<p>There are four types of advanced camera Nodon. You can combine them to program some distinctive camera effects.</p>
+<ul>
+  <li>
+    <a href="../Pages/Page_830300141.html">Camera-Position Nodon</a>
+  </li>
+  <li>
+    <a href="../Pages/Page_830300154.html">Camera-Target Nodon</a>
+  </li>
+  <li>
+    <a href="../Pages/Page_830300165.html">Camera-Direction Nodon</a>
+  </li>
+  <li>
+    <a href="../Pages/Page_830300176.html">Camera-Angle Nodon</a>
+  </li>
+</ul>
+<h1 id="Anchor_958243825_h1_2">Uncalled Advanced Camera Nodon</h1>
+<p>If one advanced camera Nodon is called, the ones that haven't been called will have the following settings by default:<br /><br />Camera Position: Set at the center (0, 0, 0)<br />Camera Target: Set at the center (0, 0, 0)<br />Camera Angle: Set to 90° horizontal<br />Camera Direction: Follows camera position and camera target<br /><br />Please note, when neither the Camera-Position Nodon nor the Camera-Target Nodon are called, the camera position and target will be determined based on whatever was in view on the program screen before program execution. If both Nodon have the same value, the camera direction will point toward Z+.</p>
+<h2 id="Anchor_958243825_h2_1">All Advanced Camera Nodon</h2>
+<table class="wrapped cameradetail">
+  <colgroup> <col /> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Position</th>
+      <th>Target</th>
+      <th>Direction</th>
+      <th>Angle</th>
+      <th>Movement</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Points toward the center (0,0,0) from the specified camera position.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>Points toward the specified target from the center (0,0,0).<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>Points toward the specified target from the specified camera position.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>The camera target and camera position are determined by the position last viewed on the program screen.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>Targets the center (0,0,0) from the specified camera position.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>Targets the specified target from the center (0,0,0).<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>Targets the specified target point from the specified camera position.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />The field of view is set to 90°.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>The camera position and target are determined based on the camera's position on the program screen. However, at the time of calculation, specified field of view will be used.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Targets the center (0, 0, 0) from the specified camera position.<br />Uses the specified field of view.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td></td>
+      <td>Looks toward the specified target from the center (0,0,0).<br />Uses the specified field of view.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td></td>
+      <td>Looks toward the specified target from the specified position.<br />Uses the specified field of view.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>The camera position and target are determined based on the camera's position on the program screen. However, at the time of calculation, specified field of view will be used.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>Targets the center (0,0,0) from the specified camera position.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />Uses the specified field of view.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Targets the specified target from the center (0,0,0).<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />Uses the specified field of view.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Targets the specified target point from the specified camera position.<br />The camera turns from that point in response to input received by the Camera-Direction Nodon.<br />Uses the specified field of view.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

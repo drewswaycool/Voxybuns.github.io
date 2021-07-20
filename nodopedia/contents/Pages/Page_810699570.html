@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Person Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Person Nodon -->
+<div class="pagetitle" id="PageId_810699570">Person Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="PlzHumanNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysMono">
+      <p>Hey, peeps!<br />I'm the one that puts the person out on the<br />game screen!</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_810699570_h1_1">Port</h1>
+<h2 id="Anchor_810699570_h2_1">Input</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Input operation</th>
+    </tr>
+    <tr>
+      <td>Forward/Backward</td>
+      <td>
+        <p>Moves the person back or forth at a<br />speed determined by the value of<br />the input.<br />Negative values will move the person<br />backward, and positive values will<br />move them forward.</p>
+      </td>
+      <td>Restricted to between -2.00 and 2.00</td>
+    </tr>
+    <tr>
+      <td>Left/Right</td>
+      <td>
+        <p>Moves the person left or right at a<br />speed determined by the value of<br />the input.<br />Negative values will move the person<br />left, and positive values will move the<br />person right.</p>
+      </td>
+      <td>Restricted to between -2.00 and 2.00</td>
+    </tr>
+    <tr>
+      <td>Jump</td>
+      <td>Causes the person to jump when a value other than 0.00 is received.<br />The height of the person's jump will be determined by the length of time that a value other 0.00 is received.</td>
+      <td>Determines whether a signal is or is not equal to 0.00</td>
+    </tr>
+    <tr>
+      <td>Action</td>
+      <td>
+        <p>The person will perform the actions below based on the input value.<br /><br />0.00 ≤ Input value < 1.00 → No action<br />2.00 ≤ Input value < 3.00 → Celebrate<br />3.00 ≤ Input value < 4.00 → Punch<br />4.00 ≤ Input value < 5.00 → Kick<br />5.00 ≤ Input value < 6.00 → Turn<br />Other: Action specified by the setting</p>
+      </td>
+      <td>
+        <p>Determines whether a signal is or is not equal to 0.00</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_810699570_h2_2">Output</h2>
+<p>None</p>
+<h2 id="Anchor_810699570_h2_3">Connection</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+    </tr>
+    <tr>
+      <td>Upper connection port</td>
+      <td>
+        <p>Connect this port to the lower connection port of another Nodon to physically link objects.</p>
+        <p>Connects to all lower connection ports.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="Anchor_810699570_h1_2">Settings</h1>
+<h2 id="Anchor_810699570_h2_4">Properties</h2>
+<p>Sets the properties of objects.</p>
+<p>The following properties can be enabled or disabled: Visible, Solid, Destructive, Destructible, Play Sound When Hit/Destroyed?, or Can Be Grabbed by Hand Nodon?<br />Movable is always enabled.</p>
+<p>See also: <a href="../Pages/Page_797820576.html">About Properties</a></p>
+<h2 id="Anchor_810699570_h2_5">Color</h2>
+<p>Sets the color.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Auto</td>
+      <td>
+        <p>The color will be applied automatically, depending on the properties.</p>
+        <p>See also: <a href="../Pages/Page_797820575.html">When Color Is Set to Auto</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>Blue<br />Red<br />Green<br />Yellow<br />Light blue<br />Pink<br />Lime green<br />Orange<br />Purple<br />Brown<br />White<br />Black</td>
+      <td>Changes the color as specified.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_810699570_h2_6">Frame of Reference<br />for Motion</h2>
+<p>Sets which rules an object will base its movement on.</p>
+<p>Local cannot be enabled for the Person Nodon.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>World</td>
+      <td>Moves the object along the world's coordinate system, according to the input received.<br />The world's coordinate system is based on the world's directionality, regardless of the directionality of the camera or the object itself.</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Moves the object along the camera's coordinate system, according to the input received.<br />The camera's coordinate system is based on the directionality of the camera's viewpoint.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_810699570_h2_7">Action</h2>
+<p>This setting determines the default action.<br />You can choose from Celebrate, Punch, Kick, or Turn.<br />For the triggering conditions for the default action, please see the details for the action port.</p>
+<h2 id="Anchor_810699570_h2_8">Movement Speed</h2>
+<p>Sets the scale factor of the movement speed.<br />Can be set between 0.00 and 2.00.</p>
+<h2 id="Anchor_810699570_h2_9">Jump Strength</h2>
+<p>Sets the scale factor of the jump speed.<br />Can be set between 0.00 and 4.00.</p>
+<h2 id="Anchor_810699570_h2_10">Size</h2>
+<p>Sets the size of an object.<br />The ratios between X, Y, and Z are fixed.<br />You can only set a size of between 0.10 and 10.00 that the X, Y, and Z dimensions will fit into.</p>
+<h2 id="Anchor_810699570_h2_11">Position</h2>
+<p>Determines the position of the object at the time of game start or after a reset.<br />X, Y, and Z can each be set to between -100.00 and 100.00.<br />Measured in meters.<br />However, if Movable is enabled and the world's shape is set to Plane, Dome, Cuboid, or Cylinder, the Y value will be adjusted so that objects lower than Y: 0 aren't embedded into the ground.</p>
+<h2 id="Anchor_810699570_h2_12">Y-Axis Rotation</h2>
+<p>Sets the orientation of the object at game start or after a reset, according to y-axis rotation.<br />Can be set between -180.00° and 180.00°.</p>
+<h2 id="Anchor_810699570_h2_13">Turning Speed</h2>
+<p>Applies a value to the turn rate on a fixed scale, when movement direction changes.<br />A value of 0.00 means movement without any turning.<br />The scale is fixed between 0.00 and 1.00.</p>
+<h1 id="Anchor_810699570_h1_3">Other</h1>
+<p>You can call up to eight Person Nodon per game.</p>
+<p>
+  <br />
+</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

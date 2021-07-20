@@ -1,0 +1,1312 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nintendo_udsg-r_std_003r';
+    src: url('../font/nintendo_udsg-r_std_003.woff2') format('woff2'),
+         url('../font/nintendo_udsg-r_std_003.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #f6f3cf;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+    margin: 20px auto 50px auto;
+    padding: 0;
+    font-family: 'nintendo_udsg-r_std_003r', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-kerning: normal;
+    line-height: 1.5em;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: auto
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    margin: 0
+}
+
+body>div {
+    overflow: scroll;
+    height: 100%
+}
+
+p {
+    position: relative;
+    margin: 10px;
+    padding: 0
+}
+
+p.center {
+    text-align: center
+}
+
+p.left {
+    text-align: left
+}
+
+p.right {
+    text-align: right
+}
+
+pre {
+    margin: 8px 12px 0 14px;
+    padding: 0
+}
+
+ul {
+    margin: 24px 12px 27px 3em;
+    padding: 0
+}
+
+ol {
+    margin: 8px 12px 0 3em;
+    padding: 0
+}
+
+dl {
+    margin: 8px 12px 0 2em;
+    padding: 0
+}
+
+li {
+    margin: 5px 0 0 0;
+    padding: 0
+}
+
+li dl,
+li ol,
+li ul {
+    margin: 0 0 12px 1em
+}
+
+dt {
+    font-weight: 700;
+    margin: 8px 0 0 0
+}
+
+dd {
+    margin: 4px 0 0 1em
+}
+
+table {
+    border-spacing: 0;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.7em;
+    border-radius: 12px;
+    background-color: #fcfaed;
+    width: 100%
+}
+
+td span[style] {
+    color: #000!important
+}
+
+td,
+th {
+    border-right: 4px solid #f6f3cf;
+    border-bottom: 4px solid #f6f3cf;
+    text-align: left
+}
+
+td:last-child,
+th:last-child {
+    border-right: 0
+}
+
+tbody tr:last-child th {
+    border-bottom: 0
+}
+
+tbody tr:last-child td {
+    border-bottom: 0
+}
+
+thead tr:last-child td {
+    border-bottom: 0
+}
+
+th {
+    padding: 15px;
+    background-color: #f9d349
+}
+
+th p {
+    padding: 0;
+    margin: 0
+}
+
+td {
+    padding: 15px
+}
+
+td p {
+    padding: 0;
+    margin: 0
+}
+
+.text_separate table p {
+    padding: 0
+}
+
+tr:first-child th:first-child {
+    width: 100px
+}
+
+tbody tr:first-child {
+    text-align: left
+}
+
+thead th {
+    border-right: 4px solid #f6f3cf;
+    border-bottom: 4px solid #f6f3cf;
+    background-color: #f9d349;
+    text-align: left
+}
+
+thead th:last-child {
+    border-top-right-radius: 12px!important
+}
+
+thead th:first-child {
+    border-top-left-radius: 12px!important
+}
+
+thead tr:last-child td:last-child {
+    border-bottom-right-radius: 12px!important
+}
+
+tbody tr:first-child th {
+    background-color: #f9d349;
+    border-top: none
+}
+
+tbody tr:first-child th:first-child {
+    border-top-left-radius: 12px!important
+}
+
+tbody tr:first-child th:last-child {
+    border-top-right-radius: 12px!important
+}
+
+tbody tr:last-child th:first-child {
+    border-bottom-left-radius: 12px!important
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px!important
+}
+
+.bgmnumber tr:first-child th:first-child {
+    width: initial;
+    width: auto
+}
+
+.bgmnumber {
+    table-layout: fixed
+}
+
+.selist tr:first-child th:first-child {
+    width: 500px
+}
+
+.shortcutcontrol tr:first-child th:first-child {
+    width: 250px
+}
+
+.colorauto tr:first-child th:first-child {
+    width: 500px
+}
+
+.cameradetail tr:first-child th:first-child {
+    width: initial;
+    width: auto
+}
+
+.cameradetail {
+    table-layout: fixed
+}
+
+.cameradetail tr:first-child th:last-child {
+    width: 300px
+}
+
+.Balloonmono {
+    width: 100%;
+    margin: 1.5em 0;
+    overflow: hidden;
+    display: table
+}
+
+.ConstantNode {
+    background: url(../img/ConstantNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.ButtonPressedNode {
+    background: url(../img/ButtonPressedNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.StickTiltedNode {
+    background: url(../img/StickTiltedNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IsTouchNode {
+    background: url(../img/IsTouchNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IntegratedSwingedNode {
+    background: url(../img/IntegratedSwingedNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IntegratedAxisAngleNode {
+    background: url(../img/IntegratedAxisAngleNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TouchPositionNode {
+    background: url(../img/TouchPositionNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IntegratedSurfaceUpwardNode {
+    background: url(../img/IntegratedSurfaceUpwardNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IntegratedRotationSpeedNode {
+    background: url(../img/IntegratedRotationSpeedNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.FoundIrMarkerNode {
+    background: url(../img/FoundIrMarkerNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzObjBreakCountNode {
+    background: url(../img/PlzObjBreakCountNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.OnStartNode {
+    background: url(../img/OnStartNode_WithBG.png) center;
+    border: solid 4px #ff104f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.CalculationNode {
+    background: url(../img/CalculationNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.ComparisonNode {
+    background: url(../img/ComparisonNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.AndNode {
+    background: url(../img/AndNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.NotNode {
+    background: url(../img/NotNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.AtanNode {
+    background: url(../img/AtanNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TrigonometricNode {
+    background: url(../img/TrigonometricNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.AngleDistanceNode {
+    background: url(../img/AngleDistanceNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.IntegerRandomNode {
+    background: url(../img/IntegerRandomNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.MappingNode {
+    background: url(../img/MappingNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.QuantizationNode {
+    background: url(../img/QuantizationNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TriggerNode {
+    background: url(../img/TriggerNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.SquareRootNode {
+    background: url(../img/SquareRootNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.AbsoluteValueNode {
+    background: url(../img/AbsoluteValueNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.NegationNode {
+    background: url(../img/NegationNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.FlagNode {
+    background: url(../img/FlagNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TpbCounterNode {
+    background: url(../img/TpbCounterNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.SpoitNode {
+    background: url(../img/SpoitNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TimerNode {
+    background: url(../img/TimerNode_WithBG.png) center;
+    border: solid 4px #00d097;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TpbPlaySoundNode {
+    background: url(../img/TpbPlaySoundNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TpbPlayBgmNode {
+    background: url(../img/TpbPlayBgmNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.VibrateNode {
+    background: url(../img/VibrateNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzGravityNode {
+    background: url(../img/PlzGravityNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzPlaySpeedNode {
+    background: url(../img/PlzPlaySpeedNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzResetNode {
+    background: url(../img/PlzResetNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzExitNode {
+    background: url(../img/PlzExitNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzChangeFileNode {
+    background: url(../img/PlzChangeFileNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.GaugeNode {
+    background: url(../img/GaugeNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.Move2dNode {
+    background: url(../img/Move2dNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.AlwaysOnNode {
+    background: url(../img/AlwaysOnNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.EmitIrLedNode {
+    background: url(../img/EmitIrLedNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.TpbPuzzleClearNode {
+    background: url(../img/TpbPuzzleClearNode_WithBG.png) center;
+    border: solid 4px #2fb6ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzIntegratedEffectNode {
+    background: url(../img/PlzIntegratedEffectNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzHumanNode {
+    background: url(../img/PlzHumanNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzUfoNode {
+    background: url(../img/PlzUfoNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCarNode {
+    background: url(../img/PlzCarNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzRigidNode {
+    background: url(../img/PlzRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzFancyRigidNode {
+    background: url(../img/PlzFancyRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzMoveRigidNode {
+    background: url(../img/PlzMoveRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzRotateRigidNode {
+    background: url(../img/PlzRotateRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzStretchRigidNode {
+    background: url(../img/PlzStretchRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCommentRigidNode {
+    background: url(../img/PlzCommentRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzScoreRigidNode {
+    background: url(../img/PlzScoreRigidNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzTextureNode {
+    background: url(../img/PlzTextureNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzTouchSensorNode {
+    background: url(../img/PlzTouchSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzBreakSensorNode {
+    background: url(../img/PlzBreakSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzBrokenSensorNode {
+    background: url(../img/PlzBrokenSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzGrabSensorNode {
+    background: url(../img/PlzGrabSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzPositionSensorNode {
+    background: url(../img/PlzPositionSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzSpeedSensorNode {
+    background: url(../img/PlzSpeedSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzAccelerationSensorNode {
+    background: url(../img/PlzAccelerationSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzAngleSensorNode {
+    background: url(../img/PlzAngleSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzRotationSensorNode {
+    background: url(../img/PlzRotationSensorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzJointSingleAxisSliderNode {
+    background: url(../img/PlzJointSingleAxisSliderNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzJointSliderNode {
+    background: url(../img/PlzJointSliderNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzJointHingeNode {
+    background: url(../img/PlzJointHingeNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzRopeNode {
+    background: url(../img/PlzRopeNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzGeneratorNode {
+    background: url(../img/PlzGeneratorNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzBindCommanderNode {
+    background: url(../img/PlzBindCommanderNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzObjWarpEnterNode {
+    background: url(../img/PlzObjWarpEnterNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzObjWarpExitNode {
+    background: url(../img/PlzObjWarpExitNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzPullForceNode {
+    background: url(../img/PlzPullForceNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzEasyCamera {
+    background: url(../img/PlzEasyCamera_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzTpsCamera {
+    background: url(../img/PlzTpsCamera_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCameraPositionNode {
+    background: url(../img/PlzCameraPositionNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCameraLookAtNode {
+    background: url(../img/PlzCameraLookAtNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCameraDirectionNode {
+    background: url(../img/PlzCameraDirectionNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzCameraViewAngleNode {
+    background: url(../img/PlzCameraViewAngleNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzHeadNode {
+    background: url(../img/PlzHeadNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzHandNode {
+    background: url(../img/PlzHandNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.PlzFieldConfigNode {
+    background: url(../img/PlzFieldConfigNode_WithBG.png) center;
+    border: solid 4px #ff8047;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.WireWarpInNode {
+    background: url(../img/WireWarpInNode_WithBG.png) center;
+    border: solid 4px #7e94af;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.WireWarpOutNode {
+    background: url(../img/WireWarpOutNode_WithBG.png) center;
+    border: solid 4px #7e94af;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.CommentNode {
+    background: url(../img/CommentNode_WithBG.png) center;
+    border: solid 4px #7e94af;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 0
+}
+
+.Balloon {
+    height: 100%;
+    position: relative
+}
+
+.Comment {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: 160px
+}
+
+.SaysIn {
+    display: inline-block;
+    background-color: #fcfaed;
+    border: 4px solid #ff104f;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    margin-top: 0
+}
+
+.SaysIn p {
+    color: #cb0068;
+    margin: 10px
+}
+
+.SaysIn:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #ff104f;
+    border-bottom: 15px solid transparent
+}
+
+.SaysMiddle {
+    display: inline-block;
+    background-color: #fcfaed;
+    border: 4px solid #00d097;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    margin-top: 0
+}
+
+.SaysMiddle p {
+    color: #00786a
+}
+
+.SaysMiddle:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #00d097;
+    border-bottom: 15px solid transparent
+}
+
+.SaysOut {
+    display: inline-block;
+    background-color: #fcfaed;
+    border: 4px solid #2fb6ff;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    margin-top: 0
+}
+
+.SaysOut p {
+    color: #0063cc
+}
+
+.SaysOut:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #2fb6ff;
+    border-bottom: 15px solid transparent
+}
+
+.SaysMono {
+    display: inline-block;
+    background-color: #fcfaed;
+    border: 4px solid #ff8047;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    margin-top: 0
+}
+
+.SaysMono p {
+    color: #eb2700
+}
+
+.SaysMono:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #ff8047;
+    border-bottom: 15px solid transparent
+}
+
+.SaysGray {
+    display: inline-block;
+    background-color: #fcfaed;
+    border: 4px solid #7e94af;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    margin-top: 0
+}
+
+.SaysGray p {
+    color: #325c7f
+}
+
+.SaysGray:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #7e94af;
+    border-bottom: 15px solid transparent
+}
+
+.Says p {
+    margin: 0 auto 10px;
+    width: 100%;
+    min-height: 140px;
+    font-weight: 900
+}
+
+a {
+    text-decoration: none;
+    color: #007cc4
+}
+
+img {
+    vertical-align: bottom;
+    border-width: 0;
+    margin: 15px 0 0;
+    max-width: 100%
+}
+
+img[height],
+img[width] {
+    max-width: none
+}
+
+input {
+    font-size: 12px;
+    font-weight: 400;
+    color: #212121;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 1px 3px 2px 0;
+    padding: 5px
+}
+
+input[type=button] {
+    background-color: button-background-color;
+    min-height: 32px
+}
+
+input[type=button][type=submit] {
+    background-color: #eee;
+    min-height: 32px
+}
+
+input[type=button][type=submit]:hover:not([disabled]) {
+    border-color: #666
+}
+
+input[type=button][type=submit][disabled] {
+    cursor: not-allowed;
+    color: #aaa;
+    border-color: #ccc
+}
+
+::-webkit-scrollbar {
+    width: 20px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d0cebc;
+    border-radius: 12px;
+    border: solid #fcfaed 8px
+}
+
+#autoindex_content::-webkit-scrollbar-thumb {
+    border: solid #f6f3cf 8px
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+.hover {
+    background-color: rgba(30, 240, 255, .298039)!important;
+    background-image: none!important;
+    opacity: .7
+}
+
+#contents_tree .hover {
+    border-radius: 12px
+}
+
+.body_content .search_result_block .hover {
+    border-radius: 12px
+}
+
+input:focus {
+    box-shadow: 0 0 0 4px #6efca5;
+    border-radius: 12px
+}
+
+.focus {
+    box-shadow: 0 0 0 4px #6efca5
+}
+
+.body_content .focus {
+    box-shadow: 0 0;
+    background-image: url(../img/bg_yellowstripe.png);
+    border-bottom: 3px solid #6efca5;
+    background-color: #fef35b
+}
+
+.body_content .search_result_title .focus {
+    background-image: none;
+    border: 0;
+    background-color: #f9d349
+}
+
+#contents_tree .focus {
+    border-radius: 12px;
+    background-image: url(../img/bg_yellowstripe.png)
+}
+
+.selected {
+    color: #999!important;
+    background-image: url(../img/bg_yellowstripe.png);
+    border-radius: 12px;
+    opacity: .7
+}
+
+@keyframes stripe {
+    0% {
+        background-position-y: 0
+    }
+    100% {
+        background-position-y: 40px
+    }
+}
+
+
+/*# sourceMappingURL=common.css.map */

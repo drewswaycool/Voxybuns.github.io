@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Background-Music Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Background-Music Nodon -->
+<div class="pagetitle" id="PageId_812554315">Background-Music Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="TpbPlayBgmNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysOut">
+      <p>Oh yeah, got a Nodopedia to reference, gather<br />some intelligence, raise your experience,<br />get this down to a science!</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_812554315_h1_1">Port</h1>
+<h2 id="Anchor_812554315_h2_1">Input</h2>
+<table class="wrapped">
+  <colgroup> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Input operation</th>
+    </tr>
+    <tr>
+      <td>Play</td>
+      <td>
+        <p>While this port receives anything but 0.00<br />as an input, the background music will<br />continue to play.<br />If a value of 0.00 is received, the music<br />will stop. When a value other than 0.00<br />is received again, the music will start<br />again from the beginning.</p>
+      </td>
+      <td>Determines whether a signal is or is not equal to 0.00</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>
+        <p>Modifies the volume of the music according to the value received at this port.<br />The starting volume is equivalent to a value of 1.00. If 2.00 is received, the volume will double.<br />If nothing is connected to this port, an input value of 1.00 will be assumed.<br /></p>
+      </td>
+      <td>Restricted to between 0.00 and 2.00</td>
+    </tr>
+    <tr>
+      <td>Speed</td>
+      <td>
+        <p>Changes the speed of the music according to the value received at this port.<br />Values above 0.00 and below 0.25 will be treated as 0.25. If 0.00 is received, the music will stop.<br />If nothing is connected to this port, an input value of 1.00 will be assumed.</p>
+      </td>
+      <td>Restricted to between 0.00 and 2.00</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_2">Output</h2>
+<p>None</p>
+<h2 id="Anchor_812554315_h2_3">Connection</h2>
+<p>None</p>
+<h1 id="Anchor_812554315_h1_2">Settings</h1>
+<h2 id="Anchor_812554315_h2_4">Theme</h2>
+<p>Sets the music you want to play.</p>
+<h2 id="Anchor_812554315_h2_5">Melody</h2>
+<p>Choose the melody, from four options.</p>
+<h2 id="Anchor_812554315_h2_6">Main Accompaniment</h2>
+<p>Choose the main accompaniment, from four options.</p>
+<h2 id="Anchor_812554315_h2_7">Sub Accompaniment</h2>
+<p>Choose the sub accompaniment, from four options.</p>
+<h2 id="Anchor_812554315_h2_8">Rhythm</h2>
+<p>Choose the rhythm, from four options.</p>
+<h1 id="Anchor_812554315_h1_3">BGM List</h1>
+<h2 id="Anchor_812554315_h2_9">Strolling</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Violin</td>
+      <td>Piano</td>
+      <td>Glockenspiel</td>
+      <td>Pop</td>
+    </tr>
+    <tr>
+      <td>Recorder</td>
+      <td>Acoustic guitar</td>
+      <td>Echo synth</td>
+      <td>March</td>
+    </tr>
+    <tr>
+      <td>Bouncing synth</td>
+      <td>Bell synth</td>
+      <td>Retro synth</td>
+      <td>Jazz</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_10">Skipping</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Clarinet</td>
+      <td>Banjo</td>
+      <td>Playful synth</td>
+      <td>Swing</td>
+    </tr>
+    <tr>
+      <td>Trombone</td>
+      <td>Guitar and organ</td>
+      <td>Synth chime</td>
+      <td>Reggae</td>
+    </tr>
+    <tr>
+      <td>Xylophone</td>
+      <td>Synth organ</td>
+      <td>Toy trumpet</td>
+      <td>6/8 march</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_11">Steady</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Retro synth</td>
+      <td>Calypso</td>
+      <td>Comical synth</td>
+      <td>Chiptune</td>
+    </tr>
+    <tr>
+      <td>Piano</td>
+      <td>Acoustic guitar</td>
+      <td>Synth pad</td>
+      <td>Bossa nova</td>
+    </tr>
+    <tr>
+      <td>Organ</td>
+      <td>Wah-wah guitar</td>
+      <td>Brass</td>
+      <td>Funk</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_12">Sunshine</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Pop synth</td>
+      <td>Reverse organ</td>
+      <td>Synth choir</td>
+      <td>Pulsing synth</td>
+    </tr>
+    <tr>
+      <td>Melodica</td>
+      <td>Acoustic guitar</td>
+      <td>Doop-doop</td>
+      <td>Country</td>
+    </tr>
+    <tr>
+      <td>Violin</td>
+      <td>Lo-fi strings</td>
+      <td>Operatic voice</td>
+      <td>Cello</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_13">Valor</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Trumpet and horn</td>
+      <td>Trombone</td>
+      <td>Strings</td>
+      <td>Tuba and percussion</td>
+    </tr>
+    <tr>
+      <td>Lead guitar</td>
+      <td>Rhythm guitar</td>
+      <td>Organ</td>
+      <td>Rock</td>
+    </tr>
+    <tr>
+      <td>Sine wave</td>
+      <td>Saw wave</td>
+      <td>Triangle wave</td>
+      <td>Noise</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_14">Tension</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Creepy synth</td>
+      <td>Pizzicato</td>
+      <td>Creepy chorus</td>
+      <td>Techno</td>
+    </tr>
+    <tr>
+      <td>Wind and xylophone</td>
+      <td>Strings</td>
+      <td>Reverse synth</td>
+      <td>Percussion</td>
+    </tr>
+    <tr>
+      <td>Brass melody</td>
+      <td>Chaotic strings</td>
+      <td>Chaotic brass</td>
+      <td>Chaotic percussion</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_15">Excited</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Saw wave</td>
+      <td>Sine lead</td>
+      <td>Synth Brass</td>
+      <td>Funk</td>
+    </tr>
+    <tr>
+      <td>Square wave</td>
+      <td>Synth and bells</td>
+      <td>Arpeggiator</td>
+      <td>Techno</td>
+    </tr>
+    <tr>
+      <td>Accordion</td>
+      <td>Piano</td>
+      <td>Delay guitar</td>
+      <td>Soft rock</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_16">Mad dash</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Strings and glock</td>
+      <td>Comical synth</td>
+      <td>Military bugle</td>
+      <td>Timpani</td>
+    </tr>
+    <tr>
+      <td>Lead synth</td>
+      <td>Electric piano</td>
+      <td>Acoustic guitar</td>
+      <td>Drum and bass</td>
+    </tr>
+    <tr>
+      <td>Odd voice synth</td>
+      <td>Banjo</td>
+      <td>Orchestra hit</td>
+      <td>Hard drum and bass</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_17">Party time</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Accordion</td>
+      <td>Electric guitar</td>
+      <td>Clarinet</td>
+      <td>Polka</td>
+    </tr>
+    <tr>
+      <td>Flute and violin</td>
+      <td>Acoustic guitar</td>
+      <td>Piano</td>
+      <td>Irish</td>
+    </tr>
+    <tr>
+      <td>Shinobue</td>
+      <td>Shamisen</td>
+      <td>Whistle</td>
+      <td>Taiko</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_18">Rivalry</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Lead synth</td>
+      <td>Organ</td>
+      <td>Trance synth</td>
+      <td>Eurobeat</td>
+    </tr>
+    <tr>
+      <td>16-bit brass</td>
+      <td>16-bit guitar</td>
+      <td>16-bit orchestra hit</td>
+      <td>16-bit rock</td>
+    </tr>
+    <tr>
+      <td>Melodic brass</td>
+      <td>Horn</td>
+      <td>Clarinet</td>
+      <td>March</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_812554315_h2_19">Ambient</h2>
+<table class="wrapped bgmnumber">
+  <colgroup> <col /> <col /> <col /> <col /> </colgroup>
+  <tbody>
+    <tr>
+      <th>Melody</th>
+      <th>Main Accompaniment</th>
+      <th>Sub Accompaniment</th>
+      <th>Rhythm</th>
+    </tr>
+    <tr>
+      <td>Birds</td>
+      <td>Gentle breeze</td>
+      <td>Labo</td>
+      <td>Dripping water</td>
+    </tr>
+    <tr>
+      <td>Insects</td>
+      <td>Strong wind</td>
+      <td>City</td>
+      <td>Horror</td>
+    </tr>
+    <tr>
+      <td>Crowd</td>
+      <td>Rain and thunder</td>
+      <td>Ocean</td>
+      <td>Outer space</td>
+    </tr>
+    <tr>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+      <td>Silent</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="Anchor_812554315_h1_4">Other</h1>
+<p>You can call up to four Background-Music Nodon per game.</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

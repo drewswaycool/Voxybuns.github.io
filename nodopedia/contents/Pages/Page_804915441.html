@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>If-Touched Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- If-Touched Nodon -->
+<div class="pagetitle" id="PageId_804915441">If-Touched Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="IsTouchNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysIn">
+      <p>I'll tell you if anyone touches the screen.<br />But be gentle, OK?</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_804915441_h1_1">Port</h1>
+<h2 id="Anchor_804915441_h2_1">Input</h2>
+<p>None</p>
+<h2 id="Anchor_804915441_h2_2">Output</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Output value</th>
+    </tr>
+    <tr>
+      <td>If touched</td>
+      <td>
+        <p>Sends output depending on touches made to the screen.</p>
+      </td>
+      <td>
+        <p>0.00 or 1.00</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804915441_h2_3">Connection</h2>
+<p>None</p>
+<h1 id="Anchor_804915441_h1_2">Settings</h1>
+<h2 id="Anchor_804915441_h2_4">Output Timing</h2>
+<p>Sets when an output of 1.00 will be sent.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>On touch</td>
+      <td>Outputs a signal of 1.00 at the moment of the touch.</td>
+    </tr>
+    <tr>
+      <td>While touched</td>
+      <td>Outputs a constant signal of 1.00 while something is being touched.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_804915441_h2_5">Touch where to output?</h2>
+<p>Sets what part of the touch screen to check.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>
+        <p>This Nodon</p>
+      </td>
+      <td>
+        <p>Responds only when area covered by the Nodon is touched.<br />If the Game-Screen Nodon is called and the viewpoint of the Game-Screen Nodon matches that of the canvas, then the location the If-Touched Nodon responds to will change to match the Game-Screen Nodon's position when the game starts. In any other condition, the location responded to matches the location of the program screen immediately before playing the game.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Anywhere</p>
+      </td>
+      <td>
+        <p>Responds when any part of the touch screen is touched.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="Anchor_804915441_h1_3">Other</h1>
+<p>The touch screen can recognize a maximum of 10 separate, simultaneous touches.</p>
+<p>If the If-Touched Nodon or Touch-Position Nodon are called, then pressing  or  on the game screen will activate the motion-control pointer. This is not affected by the control-method settings.<br />When the motion-control pointer is active, pressing , , , or  will be treated the same as a physical touch. The If-Touched Nodon and Touch-Position Nodon will respond in the same way.<br />The same is true when a connected USB mouse is clicked on the game screen.</p>
+<p>
+  <br />
+</p>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

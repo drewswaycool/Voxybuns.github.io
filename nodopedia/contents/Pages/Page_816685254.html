@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript" src="../template/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../template/js/common/manualLib.js"></script>
+<script type="text/javascript" src="../tocData.js"></script>
+<script type="text/javascript" src="../tocDataApi.js"></script>
+<link rel="stylesheet" type="text/css" href="../template/css/template.css" />
+<title>Counter Nodon | Reference</title>
+</head>
+<body data-reassemble="autoindex=no,forceNoLabel=yes">
+<div id="autoindex_content">
+<div class="body_content">
+<noscript>
+<div style="text-align: center;"><img src="../template/img/noscript.svg" /></div>
+</noscript>
+<div class="page_navigation_top">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+</table>
+</div>
+<div class="breadcrumb"></div>
+
+<!-- Counter Nodon -->
+<div class="pagetitle" id="PageId_816685254">Counter Nodon</div>
+<div class="text_separate">
+<div class="Balloon">
+  <div class="TpbCounterNode">
+    <p>
+      <br />
+    </p>
+  </div>
+  <div class="Comment">
+    <div class="SaysMiddle">
+      <p>IF THERE ARE NUMBERS,<br />I WILL COUNT THEM. AND<br />I WILL REMEMBER.</p>
+    </div>
+  </div>
+</div>
+<p>
+  <br />
+</p>
+<h1 id="Anchor_816685254_h1_1">Port</h1>
+<h2 id="Anchor_816685254_h2_1">Input</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Input operation</th>
+    </tr>
+    <tr>
+      <td>Count up</td>
+      <td>
+        <p>Input received here is used to increase or decrease the count.</p>
+      </td>
+      <td>Signal passes through unchanged</td>
+    </tr>
+    <tr>
+      <td>Count down</td>
+      <td>
+        <p>Input received here is used to increase or decrease the count.</p>
+      </td>
+      <td>Signal passes through unchanged</td>
+    </tr>
+    <tr>
+      <td>Reset</td>
+      <td>
+        <p>When input other than 0.00 is received at this port, the count will be reset.<br />When reset, the count will revert to the value specified by the Starting Value property.<br />If input other than 0.00 is received at the reset port at the same time as input from another port, the reset will be executed with priority.</p>
+      </td>
+      <td>Determines whether a signal is or is not equal to 0.00</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_816685254_h2_2">Output</h2>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Port name</th>
+      <th>Port function</th>
+      <th>Output value</th>
+    </tr>
+    <tr>
+      <td>Count</td>
+      <td>Outputs the current count value.</td>
+      <td>Accepts any number</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_816685254_h2_3">Connection</h2>
+<p>None</p>
+<h1 id="Anchor_816685254_h1_2">Settings</h1>
+<h2 id="Anchor_816685254_h2_4">Starting Value</h2>
+<p>Sets the value that the counter will have at game start or after a reset.<br />You can choose between -1,000 and 1,000.</p>
+<h2 id="Anchor_816685254_h2_5">Mode</h2>
+<p>Sets the count mode.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>No limit</td>
+      <td>Removes any limiting range on the count.</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>The count will count up or down, but only within the Count Range. If the count goes beyond the range, input will be altered to make it fit.<br /><br />For example, if the Count Range is set to between zero and 10, input will be handled as below.<br />・If the count would have been -1.00, it'll be 0.00.<br />・If the count hits 5.00, it'll be 5.00.<br />・If the count would have been 13.00, it'll be 10.00.</td>
+    </tr>
+    <tr>
+      <td>Loop</td>
+      <td>The count will loop between the upper and lower limits of the Count Range. If the count goes beyond the range, it'll loop back round to the opposite.<br /><br />For example, if the Count Range is set to between zero and 10, input will be handled as below.<br />・If the count would have been -1.00, it'll be 9.00.<br />・If the count hits 5.00, it'll be 5.00.<br />・If the count would have been 10.00, it'll be 0.00.<br />・If the count would have been 13.00, it'll be 3.00.</td>
+    </tr>
+    <tr>
+      <td>Bounce</td>
+      <td>The count will bounce between the upper and lower limits of the Count Range.<br /><br />The direction of the count will vary depending on the current state of the Nodon.<br />You can think of counting up as the "out portion" of a round trip and counting down as the "return portion."<br />On the out portion, values received will be added to the total. On the return portion, they'll be subtracted.<br /><br />If the count goes beyond the upper limit, the count will toggle from the out portion to the return portion, or vice versa if the count goes beyond the lower portion.<br /><br />If the input is received at the reset port, the count will revert to the specified starting value and to the out portion of the count.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="Anchor_816685254_h2_6">Count Range</h2>
+<p>Sets the range of values that the Nodon will track.<br />If the mode is set to No Limit, this setting will have no effect.<br />You can choose between -1,000 and 1,000.</p>
+<h2 id="Anchor_816685254_h2_7">Count Timing</h2>
+<p>Sets the timing for when counting takes place.</p>
+<table class="wrapped">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>Setting value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>On change from 0</td>
+      <td>When a value other than 0.00 is received at the count up or count down ports, one of the following values will be applied to the count only once, at the moment the value is received.<br /><br />If a value equal or greater than -1.00 but less than 0.00 is received: -1.00<br />If a value higher than 0.00 but lower or equal to 1.00 is received: 1.00<br />If a value lower than -1.00 or higher than 1.00 is received, values after the decimal point will be rounded down.</td>
+    </tr>
+    <tr>
+      <td>While Not 0</td>
+      <td>The value of the received input will be either added to or subtracted from the total, depending whether it was received at the count up or count down port.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="breadcrumb_bottom"></div>
+<div class="page_navigation">
+<table class="page_navi_root">
+<tr>
+<td class="page_navi_left"></td>
+<td class="page_navi_right"></td>
+</tr>
+<tr><td colspan="2" class="page_navi_bottom"></td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

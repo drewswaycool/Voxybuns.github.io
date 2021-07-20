@@ -1,0 +1,31 @@
+@charset "UTF-8";
+div#search_title{display:none;margin:8px 0 8px 0;border-color:gray;border-style:solid;border-width:4px 0 4px 0;padding:8px 1em 8px 1em;font-size:28px;background-color:#eef;line-height:1em}
+div#search_noscript{margin:8px 1em 8px 1em;border-color:red;border-style:solid;border-width:2px 2px 2px 2px;padding:8px 1em 8px 1em;font-size:120%;font-weight:700;line-height:120%}
+div#search_hint{display:none;margin:8px 1em 8px 1em;border-color:gray;border-style:solid;border-width:1px 1px 1px 1px;padding:8px 1em 8px 1em;font-size:100%}
+div#search_box{margin:1em 0 0 0;border-style:solid;border-width:0;padding:0 1em 0 1em}
+fieldset.search_fieldset{display:none;padding:4px}
+input.search_query{width:90%}
+div#search_message{padding:8px 1em 8px 1em;margin-bottom:20px;text-align:right;font-size:16px}
+div#search_result{margin:0 1em 20px 1em;padding:0;text-align:right;font-size:16px}
+hr.search_message_line{margin:8px 0 8px 0;border-color:gray;border-style:double;border-width:4px 0 0 0;display:none}
+#search_message input{padding:10px;background-color:#fcfaed;color:#000014;border-radius:12px;font-size:14px;border:0;margin-right:10px;float:left;margin-top:-8px}
+#search_result input{padding:10px;background-color:#fcfaed;color:#000014;border-radius:12px;font-size:14px;border:0;margin-right:10px;float:left;margin-top:-8px}
+#search_message input.focus{color:#000014;box-shadow:0 0 0 4px #6efca5}
+#search_result input.focus{color:#000014;box-shadow:0 0 0 4px #6efca5}
+p.search_result_title{margin:0;padding:15px;border-width:0;background-color:#f9d349;border-top-left-radius:12px;border-top-right-radius:12px;font-size:18px;font-weight:700;padding-left:70px}
+p.search_result_title a{color:#000014}
+p.search_result_title #text{display:none}
+p.search_result_title[value*="1020315004.html"],p.search_result_title[value*="797820575.html"],p.search_result_title[value*="797820576.html"],p.search_result_title[value*="797820577.html"],p.search_result_title[value*="871338295.html"],p.search_result_title[value*="873696305.html"],p.search_result_title[value*="873697879.html"],p.search_result_title[value*="873705541.html"],p.search_result_title[value*="953612276.html"],p.search_result_title[value*="953612994.html"],p.search_result_title[value*="953613003.html"],p.search_result_title[value*="958243139.html"],p.search_result_title[value*="958243825.html"]{padding-left:15px}
+p.search_result_breadcrumb{display:none;margin:0;padding:2px 8px 2px 16px;border-color:grey;border-style:solid;border-width:0 1px 1px 1px;background-color:#eef;line-height:initial;font-size:75%}
+p.search_result_line{margin:4px 0 30px 0;padding:20px;border-width:0;background-color:#fcfaed;border-bottom-left-radius:12px;border-bottom-right-radius:12px;font-size:18px;z-index:1;line-height:1.7em}
+div.searchbox_mini_div{margin:0;padding:25px 0 0 0;display:block;background-color:#fef35b;background-image:url(../img/bg_search.png);background-repeat:no-repeat}
+div.searchbox_mini_div input{font-size:20px;font-weight:400;color:#000014;border-radius:12px;margin:0 0 25px 0;padding:10px 10px 10px 50px;width:70%;height:30px;border:0;background-color:transparent}
+input.searchbox_mini_button{display:none}
+span.search_highlight{background-color:#fe0;display:inline-block}
+img.search_highlight{border-style:solid;border-width:2px;border-color:#fe0;background-color:#fe0}
+div[id^=search_checkbox_] label{cursor:pointer}
+div[id^=search_checkbox_] input[type=checkbox]{cursor:pointer}
+div.search_result_block{z-index:1;position:relative;text-align:left}
+div.search_result_block a{position:absolute;top:0;left:0;display:block;width:100%;height:100%;text-indent:-999px;z-index:2}
+.body_content .search_result_block .focus{background-image:none;border-radius:12px;border:0;box-shadow:0 0 0 4px #6efca5;background-color:transparent}
+/*# sourceMappingURL=search.css.map */
