@@ -39,7 +39,7 @@
 <p>The two handles can be moved left or right.<br />The raw input value (for example, the amount that a control stick is tilted) is converted according to the graph shown above the slider and then sent as output.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602902.png" height="124" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602902.png" height="124" class="embedded-image" />
   </span>
 </p>
 <p>The horizontal axis represents the input, and the vertical axis represents the output.</p>
@@ -65,7 +65,7 @@
         <div class="content-wrapper">
           <p>
             <span class="embedded-file-wrapper ">
-              <img src="/contents/Attachments/Attach_797820577/953602907.png" class="embedded-image" />
+              <img src="../contents/Attachments/Attach_797820577/953602907.png" class="embedded-image" />
             </span>
           </p>
         </div>
@@ -74,7 +74,7 @@
         <div class="content-wrapper">
           <p>
             <span class="embedded-file-wrapper ">
-              <img src="/contents/Attachments/Attach_797820577/953602906.png" height="48" class="embedded-image" />
+              <img src="../contents/Attachments/Attach_797820577/953602906.png" height="48" class="embedded-image" />
             </span>
           </p>
         </div>
@@ -83,7 +83,7 @@
         <div class="content-wrapper">
           <p>
             <span class="embedded-file-wrapper ">
-              <img src="/contents/Attachments/Attach_797820577/953602905.png" height="48" class="embedded-image" />
+              <img src="../contents/Attachments/Attach_797820577/953602905.png" height="48" class="embedded-image" />
             </span>
           </p>
         </div>
@@ -96,7 +96,7 @@
 <p>This refers to analog ranges with a small deadzone—for example, 0.10 to 1.00.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602903.png" height="70" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602903.png" height="70" class="embedded-image" />
   </span>
 </p>
 <p>Input values lower than 0.10 will be output as 0.00, so very small input will be disregarded. We can call 0.10 the "input threshold."<br />If the input exceeds 0.10, it'll start to output, and the output will increase along with the input. If 1.00 is received as input, it'll send 1.00 as output.<br />When called up, most input Nodon will have their ranges set like this by default. (Some Nodon may have different input thresholds for the lower margin.)<br />A Nodon like the Shake Nodon can pick up slight movement even when the player is trying to hold the Joy-Con still, so having an input threshold can ensure that output is sent only when the Joy-Con is intentionally shaken.</p>
@@ -104,7 +104,7 @@
 <p>Settings similar to an analog range of 0.00 to 0.50.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602899.png" height="70" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602899.png" height="70" class="embedded-image" />
   </span>
 </p>
 <p>Responds sensitively to input. Any input above a certain value will result in an output of 1.00.<br />In the example above, an input of 0.50 will result in an output of 1.00, which represents a sensitivity double that of a range like 0.00 to 1.00.<br />You can adjust the sensitivity by moving the slider on the right.</p>
@@ -112,7 +112,7 @@
 <p>Settings similar to an analog range of 0.00 to 1.00.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602904.png" height="70" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602904.png" height="70" class="embedded-image" />
   </span>
 </p>
 <p>With a range of 0.00 to 1.00, the value received as input will be sent unchanged as output.</p>
@@ -120,7 +120,7 @@
 <p>Settings similar to a digital range of 0.10 to 1.00.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602901.png" height="70" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602901.png" height="70" class="embedded-image" />
   </span>
 </p>
 <p>Use this when you want to make a clear, digital judgment of a momentary occurrence—for example, the swinging of a Joy-Con.<br />Very small input won't produce any response (it'll continue to output 0.00), but if it goes over the threshold, it'll output 1.00. It won't output intermediate values like 0.50.<br />You can adjust the handle for the lower margin to change the input threshold.</p>
@@ -128,7 +128,7 @@
 <p>Settings similar to a digital range of 0.50 to 0.60.</p>
 <p>
   <span class="embedded-file-wrapper ">
-    <img src="/contents/Attachments/Attach_797820577/953602900.png" height="70" class="embedded-image" />
+    <img src="../contents/Attachments/Attach_797820577/953602900.png" height="70" class="embedded-image" />
   </span>
 </p>
 <p>Outputs 1.00 under specific input conditions. Outside of those conditions,<br />outputs 0.00.<br />For example, you might use this type of setting if you wanted to use the If-Face-Up Nodon to check whether the Joy-Con is held at a certain angle.</p>
